@@ -1474,25 +1474,23 @@
       event.target.style.transform = 'scale(1.05)';
       event.target.style.boxShadow = '0 8px 25px rgba(37, 99, 235, 0.3)';
     }
-
     // Enhanced calculator with animations - FIXED
-    const $ = id => document.getElementById(id);
-    function calc(){
-      const missed = +$('missed').value || 0;
-      const close = (+$('close').value || 0)/100;
-      const ticket = +$('ticket').value || 0;
-      const days = +$('days').value || 0;
-      const monthly = missed * close * ticket * days;
-      
-      const calcOut = $('calcOut');
-      calcOut.style.transform = 'scale(1.05)';
-      calcOut.textContent = 'Monthly loss: 
-           + monthly.toLocaleString();
-      
-      setTimeout(() => {
-        calcOut.style.transform = 'scale(1)';
-      }, 200);
-    }
+const $ = id => document.getElementById(id);
+function calc(){
+  const missed = +$('missed').value || 0;
+  const close = (+$('close').value || 0)/100;
+  const ticket = +$('ticket').value || 0;
+  const days = +$('days').value || 0;
+  const monthly = missed * close * ticket * days;
+  
+  const calcOut = $('calcOut');
+  calcOut.style.transform = 'scale(1.05)';
+  calcOut.textContent = 'Monthly loss: $' + monthly.toLocaleString();
+  
+  setTimeout(() => {
+    calcOut.style.transform = 'scale(1)';
+  }, 200);
+}
     
     ['missed','close','ticket','days'].forEach(id => {
       $(id).addEventListener('input', calc);
