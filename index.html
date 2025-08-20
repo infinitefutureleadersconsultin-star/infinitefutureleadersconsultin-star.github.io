@@ -8,23 +8,15 @@
   <title>AI Receptionist for Eastern U.S. & Canada | Infinity AI – 24/7 Call Answering & Booking</title>
   <meta name="description" content="Infinity AI answers every call in under 2 seconds, books appointments, sends SMS reminders, and integrates with your calendar & CRM. HIPAA-compliant and secure.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://infinityaisolutions.online/">
-
+  
   <!-- SOCIAL -->
   <meta property="og:title" content="Infinity AI – 24/7 AI Receptionist that Books & Routes Calls">
   <meta property="og:description" content="Never miss another call. HIPAA-compliant AI + optional human escalation. Eastern U.S. & Canada specialists.">
-  <meta property="og:image" content="https://infinityaisolutions.online/og-image.png">
-  <meta property="og:url" content="https://infinityaisolutions.online/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Infinity AI">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/favicon.ico">
-
-  <!-- PERFORMANCE HINTS -->
-  <link rel="preconnect" href="https://calendly.com" crossorigin>
-  <link rel="preconnect" href="https://assets.calendly.com" crossorigin>
-  <link rel="dns-prefetch" href="//calendly.com">
-  <link rel="dns-prefetch" href="//assets.calendly.com">
+  
+  <!-- PERFORMANCE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
@@ -68,30 +60,6 @@
       margin: 0 auto; 
       padding: 0 20px; 
       width: 100%;
-      overflow-x: hidden;
-    }
-
-    /* Demo Badge */
-    .demo-badge {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: linear-gradient(135deg, #ef4444, #dc2626);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-weight: bold;
-      font-size: 14px;
-      z-index: 1001;
-      animation: demo-pulse 2s ease-in-out infinite;
-      box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
-      cursor: pointer;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    @keyframes demo-pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
     }
 
     /* Navigation */
@@ -376,17 +344,10 @@
       text-align: center; 
       margin-bottom: 24px; 
       font-weight: 900; 
-      color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
       background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-    }
-
-    .section-alt h2 {
-      color: var(--dark);
-      text-shadow: none;
     }
 
     .section p.sub { 
@@ -535,28 +496,7 @@
       margin-bottom: 20px;
     }
 
-    .security-btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 14px;
-      transition: all 0.3s ease;
-      color: white;
-    }
-
-    .security-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    .security-btn.btn-success { background: var(--success); }
-    .security-btn.btn-primary { background: var(--primary); }
-    .security-btn.btn-secondary { background: var(--secondary); }
-    .security-btn.btn-danger { background: var(--danger); }
-
-    /* Interactive Demo Section */
+    /* Demo Section */
     .demo { 
       background: linear-gradient(135deg, var(--dark) 0%, #374151 100%); 
       color: #fff; 
@@ -730,96 +670,6 @@
       transition: transform 0.3s ease;
     }
 
-    /* Modal Styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 2000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(15px);
-    }
-
-    .modal-content {
-      background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
-      margin: 5% auto;
-      padding: 40px;
-      border-radius: 20px;
-      width: 90%;
-      max-width: 700px;
-      max-height: 80vh;
-      overflow-y: auto;
-      position: relative;
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
-      animation: modal-appear 0.4s ease-out;
-      border: 3px solid var(--primary);
-    }
-
-    @keyframes modal-appear {
-      from {
-        opacity: 0;
-        transform: scale(0.8) translateY(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-      }
-    }
-
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      color: #64748b;
-      font-size: 2rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      background: #f1f5f9;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid #e2e8f0;
-    }
-
-    .close:hover {
-      color: var(--danger);
-      background: #fef2f2;
-      transform: rotate(90deg) scale(1.1);
-      border-color: var(--danger);
-    }
-
-    .modal h2 {
-      color: var(--primary);
-      margin-bottom: 24px;
-      font-size: 1.7rem;
-      font-weight: 800;
-    }
-
-    .modal ul {
-      margin-bottom: 24px;
-      line-height: 1.7;
-      padding-left: 20px;
-    }
-
-    .modal li {
-      margin-bottom: 8px;
-      font-size: 1rem;
-    }
-
-    .modal p {
-      margin-bottom: 16px;
-      line-height: 1.6;
-      font-size: 1rem;
-      color: #374151;
-    }
-
     /* Pricing */
     .pricing-card {
       background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
@@ -885,143 +735,6 @@
       font-size: 1rem;
     }
 
-    /* Industries Grid */
-    .industries-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 40px;
-    }
-
-    .industry-card {
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      padding: 30px;
-      border-radius: 16px;
-      text-align: center;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-      border: 2px solid #e2e8f0;
-      transition: all 0.4s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .industry-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-    }
-
-    .industry-card:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 25px 60px rgba(37, 99, 235, 0.2);
-      border-color: var(--primary);
-    }
-
-    .industry-card span {
-      font-size: 2.5rem;
-      display: block;
-      margin-bottom: 16px;
-      transition: transform 0.3s ease;
-    }
-
-    .industry-card:hover span {
-      transform: scale(1.2);
-    }
-
-    .industry-card h4 {
-      font-weight: 800;
-      margin-bottom: 12px;
-      color: var(--dark);
-      font-size: 1.2rem;
-    }
-
-    .industry-card p {
-      font-size: 0.95rem;
-      color: #64748b;
-      line-height: 1.5;
-    }
-
-    /* Audience Tabs */
-    .audience-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin: 40px 0;
-      flex-wrap: wrap;
-    }
-
-    .tab-btn {
-      padding: 14px 28px;
-      border: 2px solid var(--primary);
-      border-radius: 10px;
-      background: transparent;
-      color: var(--primary);
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 0.95rem;
-    }
-
-    .tab-btn.active, .tab-btn:hover {
-      background: var(--primary);
-      color: #fff;
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
-    }
-
-    .audience-content {
-      transition: all 0.4s ease;
-    }
-
-    /* Scenarios Grid */
-    .scenarios-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .scenario-card {
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-      border-left: 5px solid var(--danger);
-      transition: all 0.4s ease;
-      position: relative;
-    }
-
-    .scenario-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
-    }
-
-    .scenario-card h4 {
-      color: var(--danger);
-      font-weight: 800;
-      margin-bottom: 16px;
-      font-size: 1.2rem;
-    }
-
-    .scenario-card p {
-      margin-bottom: 14px;
-      line-height: 1.6;
-      font-size: 0.95rem;
-    }
-
-    .scenario-card p:first-of-type {
-      color: #64748b;
-    }
-
-    .scenario-card p:last-of-type {
-      color: var(--dark);
-      font-weight: 600;
-    }
-
     /* Footer */
     .footer {
       background: linear-gradient(135deg, var(--dark) 0%, #374151 100%);
@@ -1036,35 +749,10 @@
       z-index: 2;
     }
 
-    .footer-links {
-      margin: 24px 0;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .footer-links button, .footer-links a {
-      background: none;
-      border: none;
-      color: var(--primary);
-      cursor: pointer;
-      font-weight: 600;
-      text-decoration: underline;
-      font-size: 0.95rem;
-      transition: color 0.3s ease;
-    }
-
-    .footer-links button:hover, .footer-links a:hover {
-      color: var(--secondary);
-    }
-
     /* Mobile Responsiveness */
     @media (max-width: 768px) {
       .container {
         padding: 0 16px;
-        max-width: 100%;
-        overflow-x: hidden;
       }
 
       .hero {
@@ -1088,12 +776,12 @@
         align-items: center;
       }
 
-      .features-grid {
+      .features-grid, .testimonials-grid, .security-grid {
         grid-template-columns: 1fr;
         gap: 20px;
       }
 
-      .feature-card {
+      .feature-card, .security-card, .testimonial-card {
         padding: 30px 25px;
       }
 
@@ -1105,50 +793,13 @@
         display: block;
       }
 
-      .demo-badge {
-        top: 10px;
-        right: 10px;
-        padding: 8px 14px;
-        font-size: 12px;
-      }
-
       .calc-grid {
         grid-template-columns: 1fr;
         gap: 16px;
       }
 
-      .audience-tabs {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .tab-btn {
-        width: 100%;
-        max-width: 220px;
-      }
-
-      .modal-content {
-        padding: 25px;
-        margin: 10% auto;
-        width: 95%;
-      }
-
-      .close {
-        top: 10px;
-        right: 15px;
-        width: 35px;
-        height: 35px;
-        font-size: 1.5rem;
-      }
-
       .pricing-card {
         padding: 35px 25px;
-      }
-
-      .testimonials-grid, .scenarios-grid, .industries-grid, .security-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
       }
 
       .hero h1 {
@@ -1209,17 +860,12 @@
         padding: 50px 0;
       }
 
-      .feature-card, .security-card, .testimonial-card, .industry-card, .scenario-card {
+      .feature-card, .security-card, .testimonial-card {
         padding: 25px 20px;
       }
 
       .ai-demo-container, .call-simulation, .calc {
         padding: 20px;
-      }
-
-      .modal-content {
-        padding: 20px;
-        margin: 15% auto;
       }
 
       .hero h1 {
@@ -1229,35 +875,6 @@
       .section h2 {
         font-size: 1.6rem;
       }
-    }
-
-    /* Loading Animation */
-    .loading {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      transition: opacity 0.5s ease;
-    }
-
-    .loader {
-      width: 60px;
-      height: 60px;
-      border: 4px solid rgba(255, 255, 255, 0.3);
-      border-top: 4px solid #fff;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
     }
 
     /* Scroll Effects */
@@ -1272,49 +889,18 @@
       transform: translateY(0);
     }
 
-    /* Performance Optimizations */
-    .feature-card, .security-card, .testimonial-card, .industry-card, .scenario-card {
-      will-change: transform;
-    }
-
     /* Accessibility */
-    .btn:focus, .tab-btn:focus, .security-btn:focus {
+    .btn:focus {
       outline: 3px solid rgba(37, 99, 235, 0.5);
       outline-offset: 2px;
-    }
-
-    /* High Conversion Rate Colors */
-    .cta-highlight {
-      background: linear-gradient(135deg, #f59e0b, #ea580c);
-      color: #ffffff;
-    }
-
-    .trust-indicator {
-      background: linear-gradient(135deg, #10b981, #059669);
-      color: #ffffff;
-    }
-
-    .urgency-indicator {
-      background: linear-gradient(135deg, #ef4444, #dc2626);
-      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <!-- Loading Screen -->
-  <div class="loading" id="loading">
-    <div class="loader"></div>
-  </div>
-
-  <!-- Demo Badge -->
-  <div class="demo-badge" onclick="openModal('demo-modal')">
-    ✨ DEMO VERSION
-  </div>
-
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="/" class="logo" aria-label="Infinity AI Home">
+      <a href="#hero" class="logo">
         <div class="logo-icon">🤖</div>
         Infinity AI
       </a>
@@ -1325,7 +911,7 @@
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="nav-cta">Book Demo</a></li>
+        <li><a href="mailto:infinityaibusiness@gmail.com?subject=Book Demo Request" class="nav-cta">Book Demo</a></li>
       </ul>
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
     </div>
@@ -1338,7 +924,7 @@
         <h1>AI That Sounds Human, Works 24/7</h1>
         <p>Eastern U.S. & Canada's #1 HIPAA-Compliant AI Receptionist – answers every call in under 2 seconds, books appointments, sends SMS reminders, and integrates with your calendar & CRM with military-grade encryption.</p>
         <div class="hero-cta">
-          <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary">Book Free Demo</a>
+          <a href="mailto:infinityaibusiness@gmail.com?subject=Book Free Demo Request" class="btn btn-primary">Book Free Demo</a>
           <a href="#demo" class="btn btn-secondary">Watch Live Demo</a>
         </div>
         <p style="margin-top:24px; opacity:.9; font-size: 1rem; color: #fbbf24;"><strong>Cost of inaction:</strong> With 5 missed calls/day, you could be losing over $13,000/month. <a href="#calc" style="color:#fff; text-decoration:underline; font-weight: 600;">Run the numbers</a>.</p>
@@ -1350,7 +936,7 @@
   <section id="hipaa" class="section hipaa-section scroll-reveal">
     <div class="container">
       <div class="hipaa-content">
-        <h2>🔒 HIPAA-Compliant & Military-Grade Security</h2>
+        <h2>HIPAA-Compliant & Military-Grade Security</h2>
         <p class="sub">Your patient data and business communications are protected with the highest security standards in the industry.</p>
         
         <div class="security-grid">
@@ -1358,124 +944,25 @@
             <div style="font-size: 2.5rem; margin-bottom: 18px;">🛡️</div>
             <h3>End-to-End Encryption</h3>
             <p>All calls are encrypted with AES-256 encryption from the moment they're answered until they're stored in our secure servers.</p>
-            <button onclick="openModal('encryption-modal')" class="security-btn btn-success">Learn More</button>
           </div>
 
           <div class="security-card">
             <div style="font-size: 2.5rem; margin-bottom: 18px;">📋</div>
             <h3>HIPAA Compliance</h3>
             <p>Fully compliant with HIPAA regulations. Signed BAAs available. Regular compliance audits and staff training.</p>
-            <button onclick="openModal('hipaa-modal')" class="security-btn btn-primary">View Compliance Details</button>
           </div>
 
           <div class="security-card">
             <div style="font-size: 2.5rem; margin-bottom: 18px;">🏆</div>
             <h3>SOC 2 Certified</h3>
             <p>Independently audited and certified for security, availability, processing integrity, confidentiality, and privacy.</p>
-            <button onclick="openModal('soc2-modal')" class="security-btn btn-secondary">See Certification</button>
           </div>
 
           <div class="security-card">
             <div style="font-size: 2.5rem; margin-bottom: 18px;">🔐</div>
             <h3>Zero Trust Architecture</h3>
             <p>Every access request is verified, encrypted, and logged. No data is trusted by default, ensuring maximum security.</p>
-            <button onclick="openModal('zerotrust-modal')" class="security-btn btn-danger">Security Architecture</button>
           </div>
-
-          <div class="security-card">
-            <div style="font-size: 2.5rem; margin-bottom: 18px;">📊</div>
-            <h3>Real-Time Monitoring</h3>
-            <p>24/7 security monitoring with instant threat detection and response. Complete audit trails for all activities.</p>
-            <button onclick="openModal('monitoring-modal')" class="security-btn btn-primary">View Monitoring</button>
-          </div>
-
-          <div class="security-card">
-            <div style="font-size: 2.5rem; margin-bottom: 18px;">🌐</div>
-            <h3>Global Data Centers</h3>
-            <p>Redundant data centers across multiple regions ensure 99.9% uptime and instant disaster recovery capabilities.</p>
-            <button onclick="openModal('datacenter-modal')" class="security-btn btn-success">Infrastructure Details</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Audience Tabs -->
-  <section class="section scroll-reveal" style="padding:80px 0">
-    <div class="container">
-      <h2>Solutions Tailored to Your Business Size</h2>
-      <p class="sub">Specialized AI receptionist features designed for different business stages and needs</p>
-      
-      <div class="audience-tabs">
-        <button class="tab-btn active" onclick="showAudience('enterprise')">Enterprise</button>
-        <button class="tab-btn" onclick="showAudience('small')">Small Business</button>
-        <button class="tab-btn" onclick="showAudience('startup')">Startups</button>
-      </div>
-      
-      <div id="enterprise" class="audience-content">
-        <div class="features-grid">
-          <div class="feature-card"><span class="feature-icon">🏢</span><h3>Multi-Location Support</h3><p>Centralized call management across all locations with department-specific routing and analytics dashboard access.</p></div>
-          <div class="feature-card"><span class="feature-icon">📊</span><h3>Advanced Analytics Suite</h3><p>Detailed call performance metrics, conversion tracking, and ROI reporting with executive-level dashboards.</p></div>
-          <div class="feature-card"><span class="feature-icon">🔒</span><h3>Enterprise Security</h3><p>HIPAA-compliant, SOC 2 certified with advanced encryption and audit trails for sensitive industries.</p></div>
-          <div class="feature-card"><span class="feature-icon">👥</span><h3>Team Collaboration Tools</h3><p>Integration with Slack, Microsoft Teams, and enterprise CRMs with custom workflow automation.</p></div>
-        </div>
-      </div>
-      
-      <div id="small" class="audience-content" style="display:none">
-        <div class="features-grid">
-          <div class="feature-card"><span class="feature-icon">💰</span><h3>Cost-Effective Solution</h3><p>Replace multiple tools with one AI system. Save on receptionist costs while improving customer experience.</p></div>
-          <div class="feature-card"><span class="feature-icon">⚡</span><h3>Quick Setup & Training</h3><p>Get up and running in under 30 minutes. No technical expertise required—we handle the setup.</p></div>
-          <div class="feature-card"><span class="feature-icon">📈</span><h3>Growth-Ready Features</h3><p>Scales from 10 to 1000+ calls per day. Add locations and team members without system changes.</p></div>
-          <div class="feature-card"><span class="feature-icon">🎯</span><h3>Regional Market Focus</h3><p>Understands regional dialects and local business customs. Sounds like your neighborhood business.</p></div>
-        </div>
-      </div>
-      
-      <div id="startup" class="audience-content" style="display:none">
-        <div class="features-grid">
-          <div class="feature-card"><span class="feature-icon">🚀</span><h3>Bootstrap-Friendly Pricing</h3><p>Pay only for what you use. Start with basic features and upgrade as you grow your customer base.</p></div>
-          <div class="feature-card"><span class="feature-icon">🔄</span><h3>Rapid Iteration Support</h3><p>Easily update scripts, services, and processes as your business model evolves.</p></div>
-          <div class="feature-card"><span class="feature-icon">📞</span><h3>Professional First Impression</h3><p>Sound like an established business from day one. Never miss a potential investor or customer call.</p></div>
-          <div class="feature-card"><span class="feature-icon">📊</span><h3>Lean Analytics</h3><p>Track the metrics that matter most—conversion rates, response times, and customer satisfaction scores.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industry Solutions -->
-  <section class="section section-alt scroll-reveal">
-    <div class="container">
-      <h2>Specialized Solutions by Industry</h2>
-      <p class="sub">AI receptionist trained for your industry's specific needs and compliance requirements</p>
-      <div class="industries-grid">
-        <div class="industry-card">
-          <span>🏥</span>
-          <h4>Healthcare</h4>
-          <p>HIPAA-compliant appointment booking, insurance verification, prescription refill requests</p>
-        </div>
-        <div class="industry-card">
-          <span>⚖️</span>
-          <h4>Legal Services</h4>
-          <p>Confidential intake, court date scheduling, document request handling, emergency routing</p>
-        </div>
-        <div class="industry-card">
-          <span>🏠</span>
-          <h4>Real Estate</h4>
-          <p>Property inquiries, showing schedules, mortgage pre-qualification routing, market updates</p>
-        </div>
-        <div class="industry-card">
-          <span>🔧</span>
-          <h4>Home Services</h4>
-          <p>Emergency dispatch, estimate scheduling, parts availability, warranty claim processing</p>
-        </div>
-        <div class="industry-card">
-          <span>💰</span>
-          <h4>Financial Services</h4>
-          <p>Account inquiries, loan applications, fraud alerts, secure information verification</p>
-        </div>
-        <div class="industry-card">
-          <span>🏪</span>
-          <h4>Retail & E-commerce</h4>
-          <p>Order status, return processing, inventory checks, customer support escalation</p>
         </div>
       </div>
     </div>
@@ -1516,11 +1003,11 @@
           <div class="call-message caller"><strong>Customer:</strong> "Tuesday 9:30 sounds great."</div>
           <div class="call-message ai"><strong>Infinity AI:</strong> "Excellent! I've booked you for Tuesday at 9:30 AM with Dr. Smith. You'll receive a confirmation text shortly with appointment details and our office location. Is there anything else I can help you with today?"</div>
         </div>
-        <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:30px">Experience This Live</a>
+        <a href="mailto:infinityaibusiness@gmail.com?subject=Experience Live Demo Request" class="btn btn-primary" style="margin-top:30px">Experience This Live</a>
 
         <!-- Missed-Call Loss Calculator -->
         <div id="calc" class="calc">
-          <h3>💰 Missed-Call Loss Calculator</h3>
+          <h3>Missed-Call Loss Calculator</h3>
           <p>Estimate the revenue you're leaving on the table each month.</p>
           
           <div class="calc-grid">
@@ -1548,54 +1035,8 @@
     </div>
   </section>
 
-  <!-- Use Case Scenarios -->
-  <section class="section section-alt scroll-reveal" style="padding:80px 0">
-    <div class="container">
-      <h2>Real Scenarios, Real Solutions</h2>
-      <p class="sub">See how Infinity AI handles complex situations your business faces every day</p>
-      
-      <div class="scenarios-grid">
-        <div class="scenario-card" style="border-left-color: var(--danger);">
-          <h4>🚨 Emergency Situations</h4>
-          <p><strong>Challenge:</strong> After-hours emergency calls need immediate human attention</p>
-          <p><strong>Solution:</strong> AI identifies emergency keywords, immediately escalates to on-call staff via SMS/call, and provides caller with expected response time.</p>
-        </div>
-
-        <div class="scenario-card" style="border-left-color: var(--secondary);">
-          <h4 style="color: var(--secondary);">😤 Angry Customer Calls</h4>
-          <p><strong>Challenge:</strong> Upset customers need empathy and quick resolution</p>
-          <p><strong>Solution:</strong> AI detects emotional tone, switches to empathy mode, offers immediate callback from manager, and logs detailed complaint for follow-up.</p>
-        </div>
-
-        <div class="scenario-card" style="border-left-color: var(--success);">
-          <h4 style="color: var(--success);">💰 High-Value Prospects</h4>
-          <p><strong>Challenge:</strong> Potential big clients need VIP treatment immediately</p>
-          <p><strong>Solution:</strong> AI recognizes company names, titles, or project budgets mentioned, instantly routes to senior staff, and sends priority alert with caller details.</p>
-        </div>
-
-        <div class="scenario-card" style="border-left-color: #8b5cf6;">
-          <h4 style="color: #8b5cf6;">🌐 Multi-Language Needs</h4>
-          <p><strong>Challenge:</strong> Spanish-speaking customers need full service in their language</p>
-          <p><strong>Solution:</strong> AI automatically detects language, switches to fluent Spanish mode, handles complete booking process, and sends confirmations in preferred language.</p>
-        </div>
-
-        <div class="scenario-card" style="border-left-color: var(--primary);">
-          <h4 style="color: var(--primary);">📋 Complex Scheduling</h4>
-          <p><strong>Challenge:</strong> Multiple staff members, different services, varying time requirements</p>
-          <p><strong>Solution:</strong> AI understands service types, checks multiple calendars simultaneously, considers staff specializations, and offers optimized time slots.</p>
-        </div>
-
-        <div class="scenario-card" style="border-left-color: #06b6d4;">
-          <h4 style="color: #06b6d4;">🔄 Repeat Customers</h4>
-          <p><strong>Challenge:</strong> Returning clients expect personalized service and quick recognition</p>
-          <p><strong>Solution:</strong> AI recognizes phone number, greets by name, references previous services, suggests based on history, and expedites booking process.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Testimonials -->
-  <section id="testimonials" class="section scroll-reveal">
+  <section id="testimonials" class="section section-alt scroll-reveal">
     <div class="container">
       <h2>Trusted by Local Businesses</h2>
       <p class="sub">Real outcomes from real customers across Eastern U.S. & Canada</p>
@@ -1630,7 +1071,7 @@
         <p style="opacity:.95; margin-bottom:28px; line-height: 1.6; color: #e2e8f0;">Pricing varies based on call volume, features, and compliance requirements. We believe in fair, customized solutions that grow with your business.</p>
         
         <div style="background: rgba(255,255,255,0.15); padding: 24px; border-radius: 16px; margin: 24px 0; backdrop-filter: blur(10px);">
-          <h4 style="margin-bottom: 16px; color: #fff; font-size: 1.2rem;">✅ What's Always Included:</h4>
+          <h4 style="margin-bottom: 16px; color: #fff; font-size: 1.2rem;">What's Always Included:</h4>
           <ul style="text-align: left; color: #e2e8f0; line-height: 1.7; font-size: 1rem; list-style: none;">
             <li>• HIPAA compliance & encryption</li>
             <li>• 24/7 AI receptionist</li>
@@ -1641,7 +1082,7 @@
           </ul>
         </div>
         
-        <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: 24px;">Get Your Custom Quote</a>
+        <a href="mailto:infinityaibusiness@gmail.com?subject=Custom Quote Request" class="btn btn-secondary" style="margin-top: 24px;">Get Your Custom Quote</a>
       </div>
     </div>
   </section>
@@ -1651,198 +1092,19 @@
     <div class="container">
       <div class="footer-content">
         <div style="margin-bottom:20px; font-weight:900; font-size: 1.8rem; color: var(--primary);">Infinity AI</div>
-        <div style="margin-bottom:16px; font-size: 1.1rem; color: #e2e8f0;">🏢 Serving Eastern U.S. & Canada</div>
-        <div style="margin-bottom:16px;"><a href="mailto:infinitefutureleadersconsultin@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 1rem;">📧 infinitefutureleadersconsultin@gmail.com</a></div>
-        <div style="margin-bottom:16px; color: #94a3b8; font-size: 0.95rem;">📞 Secure, HIPAA-compliant communication</div>
-        
-        <div class="footer-links">
-          <button onclick="openModal('privacy-modal')">Privacy Policy</button>
-          <button onclick="openModal('terms-modal')">Terms of Service</button>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" style="color: var(--secondary); font-weight: 700;">Book Demo</a>
-        </div>
+        <div style="margin-bottom:16px; font-size: 1.1rem; color: #e2e8f0;">Serving Eastern U.S. & Canada</div>
+        <div style="margin-bottom:16px;"><a href="mailto:infinityaibusiness@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 1rem;">infinityaibusiness@gmail.com</a></div>
+        <div style="margin-bottom:16px; color: #94a3b8; font-size: 0.95rem;">Secure, HIPAA-compliant communication</div>
         
         <div style="margin-top:32px; opacity:.8; font-size: 0.9rem; color: #94a3b8;">© <span id="yr"></span> Infinity AI. All rights reserved. | HIPAA Compliant | SOC 2 Certified</div>
       </div>
     </div>
   </footer>
 
-  <!-- Modals -->
-  <div id="demo-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('demo-modal')">&times;</span>
-      <h2>🎭 Demo Version Notice</h2>
-      <p style="font-size: 1.1rem; margin-bottom: 20px;">This is a demonstration version of our website showcasing Infinity AI's capabilities.</p>
-      <p>All features shown are real and available in our production system. This demo allows you to:</p>
-      <ul>
-        <li>Experience our interactive AI demo</li>
-        <li>Calculate your potential missed call losses</li>
-        <li>Explore our security features</li>
-        <li>See real customer testimonials</li>
-      </ul>
-      <p style="margin-top: 20px; color: var(--primary); font-weight: 600;">Ready to see the real system in action?</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 16px;">Book Live Demo</a>
-    </div>
-  </div>
-
-  <div id="encryption-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('encryption-modal')">&times;</span>
-      <h2>🛡️ End-to-End Encryption</h2>
-      <p style="margin-bottom: 16px;">Our encryption standards exceed industry requirements:</p>
-      <ul>
-        <li><strong>AES-256 Encryption:</strong> Military-grade encryption for all voice data</li>
-        <li><strong>TLS 1.3:</strong> Secure transmission protocols</li>
-        <li><strong>Zero-Knowledge Architecture:</strong> We can't access your decrypted data</li>
-        <li><strong>Key Rotation:</strong> Encryption keys rotated every 24 hours</li>
-        <li><strong>Secure Storage:</strong> Encrypted at rest in SOC 2 certified data centers</li>
-      </ul>
-      <p style="color: #64748b;">Your patient conversations are protected with the same encryption used by banks and government agencies.</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 20px;">Discuss Security Requirements</a>
-    </div>
-  </div>
-
-  <div id="hipaa-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('hipaa-modal')">&times;</span>
-      <h2>📋 HIPAA Compliance Details</h2>
-      <p style="margin-bottom: 16px;"><strong>We take HIPAA compliance seriously:</strong></p>
-      <ul>
-        <li><strong>Business Associate Agreement (BAA):</strong> Signed with every healthcare client</li>
-        <li><strong>Administrative Safeguards:</strong> Access controls, staff training, incident response</li>
-        <li><strong>Physical Safeguards:</strong> Secure data centers, workstation controls</li>
-        <li><strong>Technical Safeguards:</strong> Encryption, audit logs, automatic logoff</li>
-        <li><strong>Regular Audits:</strong> Third-party HIPAA compliance assessments</li>
-        <li><strong>Staff Training:</strong> All team members certified in HIPAA requirements</li>
-      </ul>
-      <p style="color: #64748b; margin-bottom: 16px;">We understand that healthcare data is sensitive and must be protected at the highest level.</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary">Discuss Your Compliance Needs</a>
-    </div>
-  </div>
-
-  <div id="soc2-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('soc2-modal')">&times;</span>
-      <h2>🏆 SOC 2 Type II Certification</h2>
-      <p style="margin-bottom: 16px;"><strong>Independently verified security controls:</strong></p>
-      <ul>
-        <li><strong>Security:</strong> Information and systems are protected against unauthorized access</li>
-        <li><strong>Availability:</strong> Information and systems are available for operation and use</li>
-        <li><strong>Processing Integrity:</strong> System processing is complete, valid, accurate</li>
-        <li><strong>Confidentiality:</strong> Information designated as confidential is protected</li>
-        <li><strong>Privacy:</strong> Personal information is collected, used, retained as committed</li>
-      </ul>
-      <p style="color: #64748b;">Our SOC 2 reports are available to enterprise clients upon request.</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 16px;">Request SOC 2 Report</a>
-    </div>
-  </div>
-
-  <div id="zerotrust-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('zerotrust-modal')">&times;</span>
-      <h2>🔐 Zero Trust Security Architecture</h2>
-      <p style="margin-bottom: 16px;"><strong>Never trust, always verify:</strong></p>
-      <ul>
-        <li><strong>Identity Verification:</strong> Multi-factor authentication for all access</li>
-        <li><strong>Device Security:</strong> All devices must be verified and compliant</li>
-        <li><strong>Network Segmentation:</strong> Isolated networks prevent lateral movement</li>
-        <li><strong>Continuous Monitoring:</strong> Real-time threat detection and response</li>
-        <li><strong>Least Privilege:</strong> Users only get minimum required access</li>
-        <li><strong>Data Protection:</strong> Encryption and classification of all data</li>
-      </ul>
-      <p style="color: #64748b;">This architecture ensures that even if one component is compromised, your data remains secure.</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 16px;">Learn About Our Architecture</a>
-    </div>
-  </div>
-
-  <div id="monitoring-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('monitoring-modal')">&times;</span>
-      <h2>📊 Real-Time Security Monitoring</h2>
-      <p style="margin-bottom: 16px;"><strong>24/7 security operations center:</strong></p>
-      <ul>
-        <li><strong>Threat Detection:</strong> AI-powered anomaly detection</li>
-        <li><strong>Incident Response:</strong> Automated response to security events</li>
-        <li><strong>Audit Trails:</strong> Complete logs of all system activity</li>
-        <li><strong>Compliance Reporting:</strong> Automated compliance status reports</li>
-        <li><strong>Performance Monitoring:</strong> System health and availability tracking</li>
-        <li><strong>Alert Management:</strong> Instant notifications for critical events</li>
-      </ul>
-      <p style="color: #64748b;">Our security team monitors your system around the clock to ensure maximum protection.</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 16px;">View Monitoring Dashboard</a>
-    </div>
-  </div>
-
-  <div id="datacenter-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('datacenter-modal')">&times;</span>
-      <h2>🌐 Global Data Center Infrastructure</h2>
-      <p style="margin-bottom: 16px;"><strong>Enterprise-grade infrastructure:</strong></p>
-      <ul>
-        <li><strong>Geographic Distribution:</strong> Data centers in US East, West, and Central regions</li>
-        <li><strong>Redundancy:</strong> Multiple backup systems ensure 99.9% uptime</li>
-        <li><strong>Physical Security:</strong> Biometric access, 24/7 guards, surveillance</li>
-        <li><strong>Environmental Controls:</strong> Temperature, humidity, and power monitoring</li>
-        <li><strong>Disaster Recovery:</strong> Automated failover and data replication</li>
-        <li><strong>Compliance:</strong> SOC 2, HIPAA, and PCI DSS certified facilities</li>
-      </ul>
-      <p style="color: #64748b;">Your data is stored in the most secure and reliable facilities available.</p>
-      <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 16px;">Tour Our Infrastructure</a>
-    </div>
-  </div>
-
-  <div id="privacy-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('privacy-modal')">&times;</span>
-      <h2>Privacy Policy</h2>
-      <div style="max-height: 400px; overflow-y: auto;">
-        <p style="margin-bottom: 16px;">At Infinity AI, we take your privacy seriously. This policy outlines how we collect, use, and protect your information.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">Information We Collect</h3>
-        <p style="margin-bottom: 16px;">We collect only the information necessary to provide our AI receptionist services, including call data, appointment information, and contact details.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">How We Use Information</h3>
-        <p style="margin-bottom: 16px;">Your information is used solely to provide and improve our services. We never sell or share your data with third parties for marketing purposes.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">Data Security</h3>
-        <p style="margin-bottom: 16px;">All data is encrypted both in transit and at rest using industry-leading security measures. We maintain HIPAA compliance and SOC 2 certification.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">Your Rights</h3>
-        <p style="margin-bottom: 16px;">You have the right to access, update, or delete your personal information at any time. Contact us for any privacy-related requests.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="terms-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('terms-modal')">&times;</span>
-      <h2>Terms of Service</h2>
-      <div style="max-height: 400px; overflow-y: auto;">
-        <p style="margin-bottom: 16px;">These terms govern your use of Infinity AI's services.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">Service Description</h3>
-        <p style="margin-bottom: 16px;">Infinity AI provides AI-powered receptionist services including call answering, appointment scheduling, and customer communication.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">User Responsibilities</h3>
-        <p style="margin-bottom: 16px;">You agree to provide accurate information and use our services in compliance with applicable laws and regulations.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">Service Availability</h3>
-        <p style="margin-bottom: 16px;">We strive for 99.9% uptime but cannot guarantee uninterrupted service due to factors beyond our control.</p>
-        <h3 style="margin: 20px 0 10px 0; color: var(--primary); font-size: 1.3rem;">Limitation of Liability</h3>
-        <p style="margin-bottom: 16px;">Our liability is limited to the amount paid for services in the preceding 12 months.</p>
-      </div>
-    </div>
-  </div>
-
   <script>
     // Prevent horizontal overflow
     document.documentElement.style.overflowX = 'hidden';
     document.body.style.overflowX = 'hidden';
-
-    // Loading screen
-    window.addEventListener('load', function() {
-      const loading = document.getElementById('loading');
-      setTimeout(() => {
-        loading.style.opacity = '0';
-        setTimeout(() => {
-          loading.style.display = 'none';
-        }, 500);
-      }, 1000);
-    });
 
     // Get element by ID helper
     const $ = id => document.getElementById(id);
@@ -1886,28 +1148,6 @@
       }
     }
 
-    // Audience tab switching
-    function showAudience(audience) {
-      // Hide all content
-      document.querySelectorAll('.audience-content').forEach(el => {
-        el.style.display = 'none';
-      });
-      
-      // Remove active class from all buttons
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      // Show selected content
-      const selectedContent = $(audience);
-      if (selectedContent) {
-        selectedContent.style.display = 'block';
-      }
-      
-      // Add active class to clicked button
-      event.target.classList.add('active');
-    }
-
     // Enhanced calculator
     function calculateLoss(){
       const missed = parseInt($('missed').value) || 0;
@@ -1943,43 +1183,6 @@
     
     // Initial calculation
     setTimeout(calculateLoss, 100);
-
-    // Modal functionality
-    function openModal(modalId) {
-      const modal = $(modalId);
-      if (modal) {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-      }
-    }
-
-    function closeModal(modalId) {
-      const modal = $(modalId);
-      if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
-    }
-
-    // Close modal when clicking outside
-    document.querySelectorAll('.modal').forEach(modal => {
-      modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-          closeModal(modal.id);
-        }
-      });
-    });
-
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.modal').forEach(modal => {
-          if (modal.style.display === 'block') {
-            closeModal(modal.id);
-          }
-        });
-      }
-    });
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -2037,13 +1240,11 @@
     window.addEventListener('resize', function() {
       clearTimeout(window.resizeTimeout);
       window.resizeTimeout = setTimeout(function() {
-        // Recalculate layouts if needed
         calculateLoss();
       }, 250);
     });
 
-    console.log('🤖 Infinity AI - Vercel-Ready Website Loaded Successfully!');
-    console.log('✅ Mobile Optimized | ✅ All Buttons Functional | ✅ High-Conversion Colors | ✅ Updated Email');
+    console.log('Infinity AI - Production-Ready Website Loaded');
   </script>
 </body>
 </html>
