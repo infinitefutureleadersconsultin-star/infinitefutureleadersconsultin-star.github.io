@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- CORE SEO -->
-  <title>AI Receptionist for Eastern U.S. & Canada | Infinity AI – 24/7 Call Answering & Booking</title>
-  <meta name="description" content="Infinity AI answers every call in under 2 seconds, books appointments, sends SMS reminders, and integrates with your calendar & CRM. HIPAA-compliant and secure.">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  
-  <!-- SOCIAL -->
-  <meta property="og:title" content="Infinity AI – 24/7 AI Receptionist that Books & Routes Calls">
-  <meta property="og:description" content="Never miss another call. HIPAA-compliant AI + optional human escalation. Eastern U.S. & Canada specialists.">
+  <title>AI Receptionist for Eastern U.S. & Canada | Infinity AI</title>
+  <meta name="description" content="Infinity AI answers every call in under 2 seconds, books appointments, sends SMS reminders and integrates with your calendar & CRM. HIPAA‑compliant and secure.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://infinityaisolutions.online/">
+  <meta property="og:title" content="Infinity AI – 24/7 AI Receptionist that Books & Routes Calls">
+  <meta property="og:description" content="Never miss another call. HIPAA‑compliant AI + optional human escalation. Serving Eastern U.S. & Canada.">
+  <meta property="og:url" content="https://infinityaisolutions.online/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Infinity AI">
   <meta name="twitter:card" content="summary_large_image">
-  
-  <!-- PERFORMANCE -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://calendly.com" crossorigin>
+  <link rel="preconnect" href="https://assets.calendly.com" crossorigin>
+  <link rel="dns-prefetch" href="//calendly.com">
+  <link rel="dns-prefetch" href="//assets.calendly.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --primary: #2563eb;
@@ -26,884 +26,81 @@
       --secondary: #f59e0b;
       --success: #10b981;
       --danger: #ef4444;
-      --warning: #f59e0b;
+      --warning: #fbbf24;
       --dark: #1f2937;
       --light: #f3f4f6;
       --glass: rgba(255, 255, 255, 0.15);
-      --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-      --shadow-glow: 0 0 50px rgba(37, 99, 235, 0.4);
     }
-
-    * { 
-      margin: 0; 
-      padding: 0; 
-      box-sizing: border-box; 
-    }
-    
-    html {
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-    
-    body { 
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-      line-height: 1.6; 
-      color: #1f2937; 
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      overflow-x: hidden;
-      width: 100%;
-      max-width: 100vw;
-    }
-
-    .container { 
-      max-width: 1400px; 
-      margin: 0 auto; 
-      padding: 0 20px; 
-      width: 100%;
-    }
-
-    /* Navigation */
-    .navbar { 
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      position: fixed; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      z-index: 1000; 
-      transition: all 0.3s ease;
-      border-bottom: 3px solid var(--primary);
-    }
-
-    .nav-container { 
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center; 
-      padding: 1rem 20px; 
-      max-width: 1400px; 
-      margin: 0 auto; 
-    }
-
-    .logo { 
-      font-size: 1.8rem; 
-      font-weight: 800; 
-      color: var(--primary); 
-      text-decoration: none; 
-      display: flex; 
-      align-items: center; 
-      gap: 12px;
-      transition: transform 0.3s ease;
-    }
-
-    .logo:hover {
-      transform: scale(1.05);
-    }
-
-    .logo-icon { 
-      width: 45px; 
-      height: 45px; 
-      background: linear-gradient(135deg, var(--primary), var(--secondary)); 
-      border-radius: 12px; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      font-size: 1.4rem;
-      box-shadow: var(--shadow-glow);
-      animation: pulse-glow 3s ease-in-out infinite;
-    }
-
-    @keyframes pulse-glow {
-      0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.4); }
-      50% { box-shadow: 0 0 40px rgba(37, 99, 235, 0.7); }
-    }
-
-    .nav-menu { 
-      display: flex; 
-      gap: 24px; 
-      list-style: none; 
-      align-items: center; 
-    }
-
-    .nav-menu a { 
-      color: var(--dark); 
-      text-decoration: none; 
-      font-weight: 600; 
-      transition: all 0.3s ease; 
-      position: relative;
-      padding: 8px 0;
-      font-size: 15px;
-    }
-
-    .nav-menu a:hover { 
-      color: var(--primary); 
-      transform: translateY(-2px);
-    }
-
-    .nav-menu a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 3px;
-      bottom: 0;
-      left: 0;
-      background: var(--primary);
-      transition: width 0.3s ease;
-    }
-
-    .nav-menu a:hover::after {
-      width: 100%;
-    }
-
-    .nav-cta { 
-      background: linear-gradient(135deg, var(--secondary), #ea580c); 
-      color: #fff !important; 
-      padding: 12px 24px; 
-      border-radius: 12px; 
-      text-decoration: none; 
-      font-weight: 700;
-      box-shadow: var(--shadow-xl);
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .nav-cta::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-      transition: left 0.5s;
-    }
-
-    .nav-cta:hover::before {
-      left: 100%;
-    }
-
-    .nav-cta:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
-    }
-
-    /* Mobile Menu */
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 24px;
-      color: var(--dark);
-      cursor: pointer;
-      padding: 8px;
-    }
-
-    /* Hero Section */
-    .hero { 
-      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #0ea5e9 100%);
-      color: #fff; 
-      padding: 160px 0 120px; 
-      text-align: center; 
-      position: relative; 
-      overflow: hidden; 
-      min-height: 100vh; 
-      display: flex; 
-      align-items: center;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.2) 0%, transparent 50%);
-      animation: aurora 8s ease-in-out infinite;
-    }
-
-    @keyframes aurora {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 0.7; }
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero h1 { 
-      font-size: clamp(2.5rem, 6vw, 4.5rem); 
-      font-weight: 900; 
-      margin-bottom: 24px; 
-      text-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      color: #ffffff;
-      animation: hero-title 1s ease-out;
-    }
-
-    @keyframes hero-title {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .hero p { 
-      font-size: clamp(1.1rem, 2.5vw, 1.4rem); 
-      margin: 0 auto 32px; 
-      opacity: 0.95; 
-      max-width: 800px;
-      animation: hero-text 1s ease-out 0.3s both;
-      color: #e2e8f0;
-    }
-
-    @keyframes hero-text {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 0.95; transform: translateY(0); }
-    }
-
-    .hero-cta { 
-      display: flex; 
-      gap: 20px; 
-      justify-content: center; 
-      flex-wrap: wrap;
-      animation: hero-buttons 1s ease-out 0.6s both;
-    }
-
-    @keyframes hero-buttons {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .btn { 
-      display: inline-block; 
-      padding: 16px 32px; 
-      text-decoration: none; 
-      border-radius: 12px; 
-      font-weight: 700; 
-      font-size: 1rem; 
-      transition: all 0.4s ease; 
-      border: 2px solid transparent;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-      transition: left 0.5s;
-    }
-
-    .btn:hover::before {
-      left: 100%;
-    }
-
-    .btn-primary { 
-      background: linear-gradient(135deg, var(--secondary), #ea580c); 
-      color: #fff; 
-      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 20px 50px rgba(245, 158, 11, 0.6);
-    }
-
-    .btn-secondary { 
-      background: var(--glass); 
-      color: #fff; 
-      border: 2px solid rgba(255, 255, 255, 0.3); 
-      backdrop-filter: blur(20px);
-    }
-
-    .btn-secondary:hover {
-      transform: translateY(-5px) scale(1.05);
-      background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
-    }
-
-    /* Sections */
-    .section { 
-      padding: 100px 0; 
-      position: relative;
-    }
-
-    .section-alt { 
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); 
-      box-shadow: inset 0 1px 0 rgba(37, 99, 235, 0.1);
-    }
-
-    .section h2 { 
-      font-size: clamp(2.2rem, 5vw, 3.5rem); 
-      text-align: center; 
-      margin-bottom: 24px; 
-      font-weight: 900; 
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .section p.sub { 
-      text-align: center; 
-      font-size: 1.2rem; 
-      color: #64748b; 
-      margin: 0 auto 60px; 
-      max-width: 700px; 
-    }
-
-    /* Feature Cards */
-    .features-grid { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-      gap: 30px; 
-      margin-top: 40px; 
-    }
-
-    .feature-card { 
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); 
-      padding: 40px 30px; 
-      border-radius: 20px; 
-      text-align: left; 
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); 
-      border: 2px solid transparent;
-      position: relative; 
-      overflow: hidden;
-      transition: all 0.4s ease;
-    }
-
-    .feature-card::before { 
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      height: 5px; 
-      background: linear-gradient(135deg, var(--primary), var(--secondary)); 
-    }
-
-    .feature-card:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 25px 60px rgba(37, 99, 235, 0.2);
-      border-color: var(--primary);
-    }
-
-    .feature-icon { 
-      font-size: 2.5rem; 
-      display: block; 
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover .feature-icon {
-      transform: scale(1.2);
-    }
-
-    .feature-card h3 { 
-      font-size: 1.5rem; 
-      font-weight: 800; 
-      margin-bottom: 14px; 
-      color: var(--dark);
-    }
-
-    .feature-card p { 
-      color: #64748b; 
-      font-size: 1rem; 
-      line-height: 1.7;
-    }
-
-    /* HIPAA Compliance Section */
-    .hipaa-section {
-      background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hipaa-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        radial-gradient(circle at 30% 70%, rgba(16, 185, 129, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 70% 30%, rgba(245, 158, 11, 0.2) 0%, transparent 50%);
-      animation: security-glow 6s ease-in-out infinite;
-    }
-
-    @keyframes security-glow {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 0.8; }
-    }
-
-    .hipaa-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .hipaa-section h2 {
-      color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    .hipaa-section .sub {
-      color: #e2e8f0;
-    }
-
-    .security-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .security-card {
-      background: var(--glass);
-      backdrop-filter: blur(20px);
-      padding: 30px;
-      border-radius: 16px;
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      transition: all 0.4s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .security-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 25px 60px rgba(16, 185, 129, 0.3);
-      border-color: rgba(255, 255, 255, 0.4);
-    }
-
-    .security-card h3 {
-      color: #fff;
-      font-size: 1.3rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-    }
-
-    .security-card p {
-      color: #e2e8f0;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    /* Demo Section */
-    .demo { 
-      background: linear-gradient(135deg, var(--dark) 0%, #374151 100%); 
-      color: #fff; 
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .demo h2 {
-      color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    .demo .sub {
-      color: #e2e8f0;
-    }
-
-    .ai-demo-container { 
-      background: var(--glass); 
-      padding: 45px; 
-      border-radius: 24px; 
-      backdrop-filter: blur(20px); 
-      margin: 40px 0; 
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .call-simulation { 
-      background: rgba(255, 255, 255, 0.98); 
-      border-radius: 20px; 
-      padding: 35px; 
-      color: var(--dark); 
-      max-width: 800px; 
-      margin: 0 auto; 
-      text-align: left; 
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
-    }
-
-    .call-header { 
-      display: flex; 
-      align-items: center; 
-      gap: 16px; 
-      margin-bottom: 28px; 
-      padding-bottom: 20px; 
-      border-bottom: 2px solid #e2e8f0; 
-      flex-wrap: wrap;
-    }
-
-    .call-status { 
-      background: var(--success); 
-      color: #fff; 
-      padding: 8px 16px; 
-      border-radius: 20px; 
-      font-size: 0.9rem; 
-      font-weight: 800;
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
-    }
-
-    .call-info {
-      color: #64748b;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .call-message { 
-      margin: 20px 0; 
-      padding: 18px; 
-      border-radius: 12px; 
-      animation: message-appear 0.5s ease-out forwards;
-      opacity: 0;
-      transform: translateX(-20px);
-      font-size: 1rem;
-    }
-
-    .caller { 
-      background: #f1f5f9; 
-      border-left: 4px solid #64748b; 
-      animation-delay: 0.5s;
-    }
-
-    .ai { 
-      background: #dbeafe; 
-      border-left: 4px solid var(--primary);
-      animation-delay: 1s;
-    }
-
-    @keyframes message-appear {
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    /* Calculator Styles */
-    .calc {
-      max-width: 800px;
-      margin: 40px auto 0;
-      text-align: left;
-      background: var(--glass);
-      padding: 30px;
-      border-radius: 16px;
-      backdrop-filter: blur(20px);
-      border: 2px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .calc h3 {
-      color: #fff;
-      margin-bottom: 16px;
-      font-size: 1.5rem;
-      font-weight: 800;
-    }
-
-    .calc > p {
-      color: #e2e8f0;
-      margin-bottom: 24px;
-      font-size: 1.1rem;
-    }
-
-    .calc-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      margin: 24px 0;
-    }
-
-    .calc label {
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 8px;
-      display: block;
-      font-size: 0.9rem;
-    }
-
-    .calc input {
-      width: 100%;
-      padding: 12px;
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-
-    .calc input::placeholder {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    .calc input:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-      outline: none;
-    }
-
-    .calc-out {
-      color: #fff;
-      font-size: 1.8rem;
-      font-weight: 800;
-      text-align: center;
-      margin-top: 24px;
-      padding: 20px;
-      background: linear-gradient(135deg, var(--danger), #dc2626);
-      border-radius: 12px;
-      box-shadow: 0 15px 40px rgba(239, 68, 68, 0.4);
-      transition: transform 0.3s ease;
-    }
-
-    /* Pricing */
-    .pricing-card {
-      background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
-      padding: 50px;
-      border-radius: 24px;
-      text-align: center;
-      color: #fff;
-      margin: 40px auto;
-      max-width: 800px;
-      box-shadow: 0 30px 70px rgba(37, 99, 235, 0.4);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .pricing-card h3 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-    }
-
-    .pricing-card .price {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin: 24px 0;
-      line-height: 1.4;
-      color: #ffffff;
-    }
-
-    /* Testimonials */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .testimonial-card {
-      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      padding: 35px;
-      border-radius: 16px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-      border-top: 5px solid var(--primary);
-      transition: all 0.4s ease;
-    }
-
-    .testimonial-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 30px 70px rgba(37, 99, 235, 0.2);
-    }
-
-    .testimonial-text {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--dark);
-      margin-bottom: 20px;
-      font-style: italic;
-    }
-
-    .testimonial-author {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 1rem;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { overflow-x: hidden; scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%); }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+    /* Navbar */
+    .navbar { background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: fixed; top:0; left:0; right:0; z-index:1000; border-bottom:3px solid var(--primary); }
+    .nav-container { display:flex; justify-content:space-between; align-items:center; padding:1.2rem 24px; }
+    .logo { display:flex; align-items:center; gap:12px; font-size:1.8rem; font-weight:800; color:var(--primary); text-decoration:none; }
+    .logo-icon { width:45px; height:45px; border-radius:12px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,var(--primary),var(--secondary)); }
+    .nav-menu { display:flex; gap:32px; list-style:none; align-items:center; }
+    .nav-menu a { color:var(--dark); text-decoration:none; font-weight:600; padding:8px 0; position:relative; }
+    .nav-menu a:hover { color:var(--primary); }
+    .nav-menu a::after { content:''; position:absolute; width:0; height:3px; bottom:0; left:0; background:var(--primary); transition:width .3s ease; }
+    .nav-menu a:hover::after { width:100%; }
+    .nav-cta { background:linear-gradient(135deg,var(--secondary),#ea580c); color:#fff; padding:14px 28px; border-radius:12px; text-decoration:none; font-weight:700; }
+    .mobile-menu-btn { display:none; background:none; border:none; font-size:28px; color:var(--dark); cursor:pointer; }
+    /* Hero */
+    .hero { background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 50%,#0ea5e9 100%); color:#fff; padding:180px 0 120px; text-align:center; position:relative; overflow:hidden; min-height:100vh; display:flex; align-items:center; }
+    .hero h1 { font-size:clamp(2.6rem,6vw,4.8rem); font-weight:900; margin-bottom:24px; background:linear-gradient(135deg,#fff,#f8fafc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .hero p { font-size:clamp(1.2rem,2.5vw,1.5rem); margin:0 auto 32px; max-width:900px; opacity:.95; }
+    .hero-cta { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:16px 32px; border-radius:16px; font-weight:700; border:2px solid transparent; text-decoration:none; position:relative; overflow:hidden; }
+    .btn-primary { background:linear-gradient(135deg,var(--secondary),#ea580c); color:#fff; }
+    .btn-secondary { background:var(--glass); color:#fff; border:2px solid rgba(255,255,255,0.3); backdrop-filter:blur(20px); }
+    .section { padding:100px 0; }
+    .section h2 { font-size:clamp(2.2rem,5vw,3.5rem); text-align:center; font-weight:900; background:linear-gradient(135deg,var(--primary),var(--secondary)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:24px; }
+    .section p.sub { text-align:center; font-size:1.2rem; color:#64748b; margin:0 auto 60px; max-width:700px; }
+    /* Cards */
+    .features-grid, .testimonials-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(350px,1fr)); gap:32px; }
+    .feature-card, .testimonial-card { background:#fff; padding:40px; border-radius:20px; box-shadow:0 20px 50px rgba(0,0,0,.1); border-top:6px solid var(--primary); transition:.4s; }
+    .feature-card:hover, .testimonial-card:hover { transform:translateY(-10px) scale(1.02); box-shadow:0 35px 80px rgba(37,99,235,.2); }
+    .feature-icon { font-size:2.5rem; margin-bottom:20px; }
+    .feature-card h3 { font-size:1.5rem; font-weight:800; margin-bottom:14px; color:var(--dark); }
+    .feature-card p { color:#64748b; font-size:1rem; line-height:1.7; }
+    .testimonial-text { font-size:1.2rem; line-height:1.8; color:var(--dark); margin-bottom:20px; font-style:italic; }
+    .testimonial-author { font-weight:700; color:var(--primary); font-size:1rem; }
+    /* Calculator */
+    .calc { background:var(--glass); padding:30px; border-radius:16px; backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); }
+    .calc label { color:#fff; font-weight:700; margin-bottom:8px; display:block; font-size:.9rem; }
+    .calc input { width:100%; padding:12px; border:2px solid rgba(255,255,255,0.2); border-radius:8px; background:rgba(255,255,255,0.1); color:#fff; font-size:1rem; transition:.3s; }
+    .calc-out { color:#fff; font-size:1.8rem; font-weight:800; text-align:center; margin-top:24px; padding:20px; background:linear-gradient(135deg,var(--danger),#dc2626); border-radius:12px; box-shadow:0 15px 40px rgba(239,68,68,.4); }
+    /* Modals */
+    .modal { display:none; position:fixed; z-index:2000; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.8); backdrop-filter:blur(15px); }
+    .modal-content { background:#fff; margin:5% auto; padding:45px; border-radius:24px; width:90%; max-width:800px; position:relative; max-height:80vh; overflow-y:auto; box-shadow:0 50px 100px rgba(0,0,0,.4); border:3px solid var(--primary); }
+    .close { position:absolute; top:20px; right:30px; width:50px; height:50px; background:#ecf0f1; color:#7f8c8d; border-radius:50%; font-size:2.5rem; font-weight:bold; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:.3s; }
+    .close:hover { color:var(--danger); background:#fee; transform:rotate(90deg); }
+    .modal h2 { color:var(--primary); margin-bottom:20px; font-size:1.8rem; font-weight:800; }
+    .modal p { margin-bottom:16px; line-height:1.6; font-size:1.1rem; color:var(--dark); }
+    .modal ul { margin-bottom:16px; line-height:1.7; padding-left:20px; }
+    .modal li { margin-bottom:8px; font-size:1.1rem; }
     /* Footer */
-    .footer {
-      background: linear-gradient(135deg, var(--dark) 0%, #374151 100%);
-      color: #e2e8f0;
-      text-align: center;
-      padding: 60px 0;
-      position: relative;
-    }
-
-    .footer-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 16px;
-      }
-
-      .hero {
-        padding: 120px 0 80px;
-        min-height: 80vh;
-      }
-
-      .section {
-        padding: 60px 0;
-      }
-
-      .btn {
-        width: 100%;
-        max-width: 280px;
-        font-size: 0.95rem;
-        padding: 14px 24px;
-      }
-
-      .hero-cta {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .features-grid, .testimonials-grid, .security-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .feature-card, .security-card, .testimonial-card {
-        padding: 30px 25px;
-      }
-
-      .nav-menu {
-        display: none;
-      }
-
-      .mobile-menu-btn {
-        display: block;
-      }
-
-      .calc-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .pricing-card {
-        padding: 35px 25px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      .section h2 {
-        font-size: 1.8rem;
-      }
-
-      .ai-demo-container {
-        padding: 25px;
-      }
-
-      .call-simulation {
-        padding: 25px;
-      }
-
-      .calc {
-        padding: 25px;
-      }
-
-      .security-card {
-        padding: 25px;
-      }
-
-      .call-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-      }
-
-      .call-info {
-        font-size: 0.85rem;
-      }
-
-      .calc-out {
-        font-size: 1.5rem;
-        padding: 16px;
-      }
-    }
-
-    /* Extra small mobile */
-    @media (max-width: 480px) {
-      .container {
-        padding: 0 12px;
-      }
-
-      .hero {
-        padding: 100px 0 60px;
-      }
-
-      .section {
-        padding: 50px 0;
-      }
-
-      .feature-card, .security-card, .testimonial-card {
-        padding: 25px 20px;
-      }
-
-      .ai-demo-container, .call-simulation, .calc {
-        padding: 20px;
-      }
-
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-
-      .section h2 {
-        font-size: 1.6rem;
-      }
-    }
-
-    /* Scroll Effects */
-    .scroll-reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease;
-    }
-
-    .scroll-reveal.revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Accessibility */
-    .btn:focus {
-      outline: 3px solid rgba(37, 99, 235, 0.5);
-      outline-offset: 2px;
+    .footer { background:linear-gradient(135deg,var(--dark),#374151); color:#e2e8f0; text-align:center; padding:60px 0; position:relative; }
+    .footer-links { margin:28px 0; display:flex; justify-content:center; gap:32px; flex-wrap:wrap; }
+    .footer-links button,.footer-links a { background:none; border:none; color:var(--primary); cursor:pointer; font-weight:600; text-decoration:underline; }
+    .footer-links button:hover,.footer-links a:hover { color:var(--secondary); }
+    /* Scroll reveal */
+    .scroll-reveal { opacity:0; transform:translateY(50px); transition:all .8s ease; }
+    .scroll-reveal.revealed { opacity:1; transform:translateY(0); }
+    @media(max-width:768px){
+      .nav-menu { display:none; }
+      .mobile-menu-btn { display:block; }
+      .section { padding:80px 0; }
+      .hero { padding:140px 0 100px; }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="logo">
-        <div class="logo-icon">🤖</div>
-        Infinity AI
-      </a>
+      <a href="#hero" class="logo"><div class="logo-icon">🤖</div>Infinity AI</a>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#features">Features</a></li>
         <li><a href="#demo">Demo</a></li>
@@ -911,228 +108,177 @@
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="mailto:infinityaibusiness@gmail.com?subject=Book Demo Request" class="nav-cta">Book Demo</a></li>
+        <li><a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="nav-cta">Book Demo</a></li>
       </ul>
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
     </div>
   </nav>
-
-  <!-- Hero -->
   <section class="hero" id="hero">
     <div class="container">
-      <div class="hero-content">
-        <h1>AI That Sounds Human, Works 24/7</h1>
-        <p>Eastern U.S. & Canada's #1 HIPAA-Compliant AI Receptionist – answers every call in under 2 seconds, books appointments, sends SMS reminders, and integrates with your calendar & CRM with military-grade encryption.</p>
-        <div class="hero-cta">
-          <a href="mailto:infinityaibusiness@gmail.com?subject=Book Free Demo Request" class="btn btn-primary">Book Free Demo</a>
-          <a href="#demo" class="btn btn-secondary">Watch Live Demo</a>
-        </div>
-        <p style="margin-top:24px; opacity:.9; font-size: 1rem; color: #fbbf24;"><strong>Cost of inaction:</strong> With 5 missed calls/day, you could be losing over $13,000/month. <a href="#calc" style="color:#fff; text-decoration:underline; font-weight: 600;">Run the numbers</a>.</p>
+      <h1>AI That Sounds Human, Works 24/7</h1>
+      <p>Eastern U.S. &amp; Canada's #1 HIPAA‑Compliant AI receptionist – answers every call in under 2 seconds, books appointments, sends SMS reminders and integrates with your calendar & CRM using military‑grade encryption.</p>
+      <div class="hero-cta">
+        <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary">Book Free Demo</a>
+        <a href="#demo" class="btn btn-secondary">Watch Live Demo</a>
       </div>
+      <p style="margin-top:24px; opacity:.9; font-size:1rem; color:var(--warning);"><strong>Cost of inaction:</strong> With 5 missed calls/day, you could be losing over $13,000/month. <a href="#calc" style="color:#fff; text-decoration:underline;">Run the numbers</a>.</p>
     </div>
   </section>
-
-  <!-- HIPAA Compliance Section -->
-  <section id="hipaa" class="section hipaa-section scroll-reveal">
+  <!-- Security Section -->
+  <section id="hipaa" class="section scroll-reveal" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:#fff; position:relative; overflow:hidden;">
     <div class="container">
-      <div class="hipaa-content">
-        <h2>HIPAA-Compliant & Military-Grade Security</h2>
-        <p class="sub">Your patient data and business communications are protected with the highest security standards in the industry.</p>
-        
-        <div class="security-grid">
-          <div class="security-card">
-            <div style="font-size: 2.5rem; margin-bottom: 18px;">🛡️</div>
-            <h3>End-to-End Encryption</h3>
-            <p>All calls are encrypted with AES-256 encryption from the moment they're answered until they're stored in our secure servers.</p>
-          </div>
-
-          <div class="security-card">
-            <div style="font-size: 2.5rem; margin-bottom: 18px;">📋</div>
-            <h3>HIPAA Compliance</h3>
-            <p>Fully compliant with HIPAA regulations. Signed BAAs available. Regular compliance audits and staff training.</p>
-          </div>
-
-          <div class="security-card">
-            <div style="font-size: 2.5rem; margin-bottom: 18px;">🏆</div>
-            <h3>SOC 2 Certified</h3>
-            <p>Independently audited and certified for security, availability, processing integrity, confidentiality, and privacy.</p>
-          </div>
-
-          <div class="security-card">
-            <div style="font-size: 2.5rem; margin-bottom: 18px;">🔐</div>
-            <h3>Zero Trust Architecture</h3>
-            <p>Every access request is verified, encrypted, and logged. No data is trusted by default, ensuring maximum security.</p>
-          </div>
+      <h2 style="color:#fff;">🔒 HIPAA‑Compliant & Military‑Grade Security</h2>
+      <p class="sub" style="color:#e2e8f0;">Your patient data and business communications are protected with the highest security standards in the industry.</p>
+      <div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+        <div class="feature-card" style="background:var(--glass); backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); color:#fff;">
+          <h3>End‑to‑End Encryption</h3>
+          <p style="color:#fff;">All calls are encrypted with AES‑256 from the moment they're answered until they're stored on our secure servers.</p>
+          <button onclick="openModal('encryption-modal')" class="btn btn-primary" style="padding:10px 20px; margin-top:16px; font-size:.9rem;">Learn More</button>
+        </div>
+        <div class="feature-card" style="background:var(--glass); backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); color:#fff;">
+          <h3>HIPAA Compliance</h3>
+          <p style="color:#fff;">Fully compliant with HIPAA regulations. Signed BAAs available. Regular compliance audits and staff training.</p>
+          <button onclick="openModal('hipaa-modal')" class="btn btn-primary" style="padding:10px 20px; margin-top:16px; font-size:.9rem;">Details</button>
+        </div>
+        <div class="feature-card" style="background:var(--glass); backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); color:#fff;">
+          <h3>SOC 2 Certified</h3>
+          <p style="color:#fff;">Independently audited and certified for security, availability, processing integrity, confidentiality and privacy.</p>
+          <button onclick="openModal('soc2-modal')" class="btn btn-primary" style="padding:10px 20px; margin-top:16px; font-size:.9rem;">See Certification</button>
+        </div>
+        <div class="feature-card" style="background:var(--glass); backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); color:#fff;">
+          <h3>Zero Trust Architecture</h3>
+          <p style="color:#fff;">Every access request is verified, encrypted and logged. No data is trusted by default, ensuring maximum security.</p>
+          <button onclick="openModal('zerotrust-modal')" class="btn btn-primary" style="padding:10px 20px; margin-top:16px; font-size:.9rem;">Architecture</button>
+        </div>
+        <div class="feature-card" style="background:var(--glass); backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); color:#fff;">
+          <h3>Real‑Time Monitoring</h3>
+          <p style="color:#fff;">24/7 security monitoring with instant threat detection and response. Complete audit trails for all activities.</p>
+          <button onclick="openModal('monitoring-modal')" class="btn btn-primary" style="padding:10px 20px; margin-top:16px; font-size:.9rem;">Monitoring</button>
+        </div>
+        <div class="feature-card" style="background:var(--glass); backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2); color:#fff;">
+          <h3>Global Data Centers</h3>
+          <p style="color:#fff;">Redundant data centers across multiple regions ensure 99.9% uptime and instant disaster recovery capabilities.</p>
+          <button onclick="openModal('datacenter-modal')" class="btn btn-primary" style="padding:10px 20px; margin-top:16px; font-size:.9rem;">Infrastructure</button>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Features -->
+  <!-- Features Section -->
   <section id="features" class="section scroll-reveal">
     <div class="container">
       <h2>Everything Your Business Needs</h2>
-      <p class="sub">Smart, fast, and seamless AI call handling for businesses across Eastern U.S. & Canada</p>
+      <p class="sub">Smart, fast and seamless AI call handling for businesses across Eastern U.S. &amp; Canada</p>
       <div class="features-grid">
-        <div class="feature-card"><span class="feature-icon">⚡</span><h3>Instant Response</h3><p>Every call answered in under 2 seconds — no more missed opportunities or lost revenue.</p></div>
-        <div class="feature-card"><span class="feature-icon">🎯</span><h3>Accurate Call Handling</h3><p>Understands natural speech, captures details, and routes or books with 99.7% precision.</p></div>
-        <div class="feature-card"><span class="feature-icon">🔄</span><h3>Seamless Integrations</h3><p>Google Calendar, Outlook, Salesforce, and 500+ CRMs. Setup takes minutes, not hours.</p></div>
-        <div class="feature-card"><span class="feature-icon">📱</span><h3>Smart SMS Reminders</h3><p>Reduce no-shows by 75% with intelligent confirmations and reminder flows.</p></div>
+        <div class="feature-card"><span class="feature-icon">⚡</span><h3>Instant Response</h3><p>Every call answered in under 2 seconds — no more missed opportunities or lost revenue.</p></div>
+        <div class="feature-card"><span class="feature-icon">🎯</span><h3>Accurate Call Handling</h3><p>Understands natural speech, captures details and routes or books with 99.7% precision.</p></div>
+        <div class="feature-card"><span class="feature-icon">🔄</span><h3>Seamless Integrations</h3><p>Google Calendar, Outlook, Salesforce and 500+ CRMs. Setup takes minutes, not hours.</p></div>
+        <div class="feature-card"><span class="feature-icon">📱</span><h3>Smart SMS Reminders</h3><p>Reduce no‑shows by 75% with intelligent confirmations and reminder flows.</p></div>
         <div class="feature-card"><span class="feature-icon">🌎</span><h3>Bilingual Support</h3><p>Fluent in English & Spanish for diverse customer bases across our service region.</p></div>
-        <div class="feature-card"><span class="feature-icon">🧑‍⚕️</span><h3>Human Escalation</h3><p>Seamlessly escalate complex calls to humans—no frustrating IVR phone tree.</p></div>
+        <div class="feature-card"><span class="feature-icon">🧑‍⚕️</span><h3>Human Escalation</h3><p>Seamlessly elevate complex calls to humans—no frustrating IVR phone tree.</p></div>
       </div>
     </div>
   </section>
-
-  <!-- Demo -->
-  <section id="demo" class="section demo scroll-reveal">
+  <!-- Demo Section -->
+  <section id="demo" class="section scroll-reveal" style="background:linear-gradient(135deg,var(--dark),#374151); color:#fff;">
     <div class="container">
-      <h2>See Infinity AI In Action</h2>
-      <p class="sub">Experience how our AI handles real customer calls with human-like conversation</p>
-      
-      <div class="ai-demo-container">
-        <div class="call-simulation">
-          <div class="call-header">
-            <div class="call-status">● LIVE CALL</div>
-            <div class="call-info">Incoming: (519) 555-0123 → Toronto Dental Practice</div>
+      <h2>See Infinity AI In Action</h2>
+      <p class="sub" style="color:#e2e8f0;">Experience how our AI handles real customer calls with human‑like conversation</p>
+      <div style="background:var(--glass); padding:45px; border-radius:24px; backdrop-filter:blur(20px); border:2px solid rgba(255,255,255,0.2);">
+        <div style="background:rgba(255,255,255,.98); border-radius:20px; padding:35px; color:var(--dark); box-shadow:0 25px 60px rgba(0,0,0,.3); max-width:800px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px; flex-wrap:wrap;">
+            <div style="background:var(--success); color:#fff; padding:8px 16px; border-radius:20px; font-size:.9rem; font-weight:800; animation:pulse 2s ease-in-out infinite;">● LIVE CALL</div>
+            <div style="color:#64748b; font-weight:600; font-size:.9rem;">Incoming: (518) 555‑0123 → Toronto Dental Practice</div>
           </div>
-          <div class="call-message caller"><strong>Customer:</strong> "Hi, I'd like to schedule a dental cleaning next week."</div>
-          <div class="call-message ai"><strong>Infinity AI:</strong> "I'd be happy to help schedule that for you. May I have your name and do you prefer morning or afternoon appointments?"</div>
-          <div class="call-message caller"><strong>Customer:</strong> "Sarah Johnson—mornings work better for me."</div>
-          <div class="call-message ai"><strong>Infinity AI:</strong> "Perfect, Sarah. I have Tuesday at 9:30 AM or Wednesday at 10:00 AM available. Which would you prefer?"</div>
-          <div class="call-message caller"><strong>Customer:</strong> "Tuesday 9:30 sounds great."</div>
-          <div class="call-message ai"><strong>Infinity AI:</strong> "Excellent! I've booked you for Tuesday at 9:30 AM with Dr. Smith. You'll receive a confirmation text shortly with appointment details and our office location. Is there anything else I can help you with today?"</div>
+          <div style="margin:20px 0; padding:18px; border-radius:12px; font-size:1rem; background:#f1f5f9; border-left:4px solid #64748b;">Customer: "Hi, I'd like to schedule a dental cleaning next week."</div>
+          <div style="margin:20px 0; padding:18px; border-radius:12px; font-size:1rem; background:#dbeafe; border-left:4px solid var(--primary);">Infinity AI: "I'd be happy to help with that. May I have your name and do you prefer morning or afternoon appointments?"</div>
+          <div style="margin:20px 0; padding:18px; border-radius:12px; font-size:1rem; background:#f1f5f9; border-left:4px solid #64748b;">Customer: "Sarah Johnson—mornings work better for me."</div>
+          <div style="margin:20px 0; padding:18px; border-radius:12px; font-size:1rem; background:#dbeafe; border-left:4px solid var(--primary);">Infinity AI: "Great. I have Tuesday at 9:30 AM or Wednesday at 10:00 AM. Which do you prefer?"</div>
         </div>
-        <a href="mailto:infinityaibusiness@gmail.com?subject=Experience Live Demo Request" class="btn btn-primary" style="margin-top:30px">Experience This Live</a>
-
-        <!-- Missed-Call Loss Calculator -->
-        <div id="calc" class="calc">
-          <h3>Missed-Call Loss Calculator</h3>
+        <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:30px;">Experience This Live</a>
+        <div id="calc" class="calc" style="margin-top:40px;">
+          <h3>Missed‑Call Loss Calculator</h3>
           <p>Estimate the revenue you're leaving on the table each month.</p>
-          
-          <div class="calc-grid">
-            <div>
-              <label for="missed">Missed calls per day</label>
-              <input id="missed" type="number" min="0" value="5" placeholder="5">
-            </div>
-            <div>
-              <label for="close">Close rate (%)</label>
-              <input id="close" type="number" min="0" max="100" value="25" placeholder="25">
-            </div>
-            <div>
-              <label for="ticket">Average ticket ($)</label>
-              <input id="ticket" type="number" min="0" value="350" placeholder="350">
-            </div>
-            <div>
-              <label for="days">Workdays per month</label>
-              <input id="days" type="number" min="0" max="31" value="22" placeholder="22">
-            </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:20px; margin:24px 0;">
+            <div><label for="missed">Missed calls per day</label><input id="missed" type="number" min="0" value="5"></div>
+            <div><label for="close">Close rate (%)</label><input id="close" type="number" min="0" max="100" value="25"></div>
+            <div><label for="ticket">Average ticket ($)</label><input id="ticket" type="number" min="0" value="350"></div>
+            <div><label for="days">Workdays per month</label><input id="days" type="number" min="0" max="31" value="22"></div>
           </div>
-          
           <div class="calc-out" id="calcOut">Monthly loss: $13,125</div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Testimonials -->
-  <section id="testimonials" class="section section-alt scroll-reveal">
+  <section id="testimonials" class="section scroll-reveal">
     <div class="container">
       <h2>Trusted by Local Businesses</h2>
-      <p class="sub">Real outcomes from real customers across Eastern U.S. & Canada</p>
+      <p class="sub">Real outcomes from real customers across Eastern U.S. & Canada</p>
       <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <p class="testimonial-text">"Our booking rate jumped 40% and our front desk staff finally has time to breathe. The AI handles routine calls perfectly."</p>
-          <div class="testimonial-author">— Dr. Sarah Chen, Dental Practice, Toronto</div>
-        </div>
-        
-        <div class="testimonial-card">
-          <p class="testimonial-text">"No-shows dropped by 75% thanks to the intelligent SMS reminder system. Our revenue increased significantly."</p>
-          <div class="testimonial-author">— Maria Rodriguez, Med Spa, Boston</div>
-        </div>
-        
-        <div class="testimonial-card">
-          <p class="testimonial-text">"Setup took 15 minutes and integrates seamlessly with our existing systems. Best investment we've made."</p>
-          <div class="testimonial-author">— Mike Thompson, HVAC Services, Philadelphia</div>
-        </div>
+        <div class="testimonial-card"><p class="testimonial-text">"Our booking rate jumped 40% and our front desk staff finally has time to breathe. The AI handles routine calls perfectly."</p><div class="testimonial-author">— Dr. Sarah Chen, Dental Practice, Toronto</div></div>
+        <div class="testimonial-card"><p class="testimonial-text">"No‑shows dropped by 75% thanks to the intelligent SMS reminder system. Our revenue increased significantly."</p><div class="testimonial-author">— Maria Rodriguez, Med Spa, Boston</div></div>
+        <div class="testimonial-card"><p class="testimonial-text">"Setup took 15 minutes and integrates seamlessly with our existing systems. Best investment we've made."</p><div class="testimonial-author">— Mike Thompson, HVAC Services, Philadelphia</div></div>
       </div>
     </div>
   </section>
-
   <!-- Pricing -->
   <section id="pricing" class="section scroll-reveal">
     <div class="container">
       <h2>Simple, Transparent Pricing</h2>
-      <p class="sub">Start now, scale as you grow - with enterprise-grade security included</p>
-      <div class="pricing-card">
-        <h3>Enterprise-Ready Solution</h3>
-        <p style="opacity:.95; font-size: 1.1rem; color: #e2e8f0;">Perfect for businesses of all sizes with HIPAA compliance included</p>
-        <div class="price">Custom Pricing for Your Needs</div>
-        <p style="opacity:.95; margin-bottom:28px; line-height: 1.6; color: #e2e8f0;">Pricing varies based on call volume, features, and compliance requirements. We believe in fair, customized solutions that grow with your business.</p>
-        
-        <div style="background: rgba(255,255,255,0.15); padding: 24px; border-radius: 16px; margin: 24px 0; backdrop-filter: blur(10px);">
-          <h4 style="margin-bottom: 16px; color: #fff; font-size: 1.2rem;">What's Always Included:</h4>
-          <ul style="text-align: left; color: #e2e8f0; line-height: 1.7; font-size: 1rem; list-style: none;">
+      <p class="sub">Start now, scale as you grow – with enterprise‑grade security included</p>
+      <div class="feature-card" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:#fff; padding:50px; border-radius:24px; text-align:center; box-shadow:0 30px 70px rgba(37,99,235,0.4); max-width:900px; margin:0 auto;">
+        <h3 style="margin-bottom:20px; font-size:2rem; font-weight:900;">Enterprise‑Ready Solution</h3>
+        <p style="opacity:.95; font-size:1.1rem;">Perfect for businesses of all sizes with HIPAA compliance included.</p>
+        <div style="font-size:1.8rem; font-weight:800; margin:24px 0;">Custom Pricing for Your Needs</div>
+        <p style="opacity:.95; line-height:1.6; margin-bottom:28px;">Pricing varies based on call volume, features and compliance requirements. We believe in fair, customized solutions that grow with your business.</p>
+        <div style="background:rgba(255,255,255,0.15); padding:24px; border-radius:16px; backdrop-filter:blur(10px); margin-bottom:24px;">
+          <h4 style="margin-bottom:16px; color:#fff; font-size:1.2rem;">What's Always Included:</h4>
+          <ul style="text-align:left; color:#f1f5f9; line-height:1.7; list-style:none;">
             <li>• HIPAA compliance & encryption</li>
             <li>• 24/7 AI receptionist</li>
             <li>• Calendar & CRM integrations</li>
             <li>• SMS reminders & confirmations</li>
-            <li>• Real-time analytics dashboard</li>
+            <li>• Real‑time analytics dashboard</li>
             <li>• Human escalation when needed</li>
           </ul>
         </div>
-        
-        <a href="mailto:infinityaibusiness@gmail.com?subject=Custom Quote Request" class="btn btn-secondary" style="margin-top: 24px;">Get Your Custom Quote</a>
+        <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top:24px;">Get Your Custom Quote</a>
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer id="contact" class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div style="margin-bottom:20px; font-weight:900; font-size: 1.8rem; color: var(--primary);">Infinity AI</div>
-        <div style="margin-bottom:16px; font-size: 1.1rem; color: #e2e8f0;">Serving Eastern U.S. & Canada</div>
-        <div style="margin-bottom:16px;"><a href="mailto:infinityaibusiness@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 1rem;">infinityaibusiness@gmail.com</a></div>
-        <div style="margin-bottom:16px; color: #94a3b8; font-size: 0.95rem;">Secure, HIPAA-compliant communication</div>
-        
-        <div style="margin-top:32px; opacity:.8; font-size: 0.9rem; color: #94a3b8;">© <span id="yr"></span> Infinity AI. All rights reserved. | HIPAA Compliant | SOC 2 Certified</div>
+      <div style="margin-bottom:20px; font-weight:900; font-size:1.8rem; color:var(--primary);">Infinity AI</div>
+      <div style="margin-bottom:16px; font-size:1.1rem; color:#e2e8f0;">Serving Eastern U.S. & Canada</div>
+      <div style="margin-bottom:16px;"><a href="mailto:infinitefutureleadersconsultin@gmail.com" style="color:var(--primary); text-decoration:none; font-weight:600;">infinitefutureleadersconsultin@gmail.com</a></div>
+      <div style="margin-bottom:16px; color:#94a3b8; font-size:.95rem;">Secure, HIPAA‑compliant communication</div>
+      <div class="footer-links">
+        <button onclick="openModal('privacy-modal')">Privacy Policy</button>
+        <button onclick="openModal('terms-modal')">Terms of Service</button>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://calendly.com/infinitefutureleadersconsultin/30min" target="_blank" rel="noopener" style="color:var(--secondary); font-weight:700;">Book Demo</a>
       </div>
+      <div style="margin-top:32px; opacity:.8; font-size:.9rem; color:#94a3b8;">© <span id="yr"></span> Infinity AI. All rights reserved. | HIPAA Compliant | SOC 2 Certified</div>
     </div>
   </footer>
-
+  <!-- Modals -->
+  <div id="encryption-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>🛡️ End‑to‑End Encryption</h2><p>Our encryption standards exceed industry requirements:</p><ul><li><strong>AES‑256 Encryption:</strong> Military‑grade encryption for all voice data.</li><li><strong>TLS 1.3:</strong> Secure transmission protocols.</li><li><strong>Zero‑Knowledge Architecture:</strong> Only you hold the decryption keys.</li><li><strong>Key Rotation:</strong> Keys rotated every 24 hours.</li><li><strong>Secure Storage:</strong> Data encrypted at rest in SOC 2 certified data centres.</li></ul><p>Your conversations are protected with the same encryption used by banks and government agencies.</p></div></div>
+  <div id="hipaa-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>📋 HIPAA Compliance Details</h2><p>We take HIPAA compliance seriously:</p><ul><li><strong>BAA:</strong> Signed with every healthcare client.</li><li><strong>Administrative Safeguards:</strong> Strict access controls and staff training.</li><li><strong>Physical Safeguards:</strong> Secure data centres and workstation controls.</li><li><strong>Technical Safeguards:</strong> Encryption, audit logs and automatic logoff.</li><li><strong>Regular Audits:</strong> Third‑party assessments of our compliance.</li></ul><p>Your patients' data is always treated with the utmost care.</p></div></div>
+  <div id="soc2-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>🏆 SOC 2 Type II Certification</h2><p>Our SOC 2 report covers:</p><ul><li><strong>Security:</strong> Systems are protected against unauthorized access.</li><li><strong>Availability:</strong> Information is available for operation and use.</li><li><strong>Processing Integrity:</strong> System processing is complete and accurate.</li><li><strong>Confidentiality:</strong> Confidential information is protected.</li><li><strong>Privacy:</strong> Personal information is collected, used and retained properly.</li></ul><p>Reports are available to enterprise clients upon request.</p></div></div>
+  <div id="zerotrust-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>🔐 Zero Trust Architecture</h2><p>Never trust, always verify:</p><ul><li><strong>Identity Verification:</strong> Multi‑factor authentication for all access.</li><li><strong>Device Security:</strong> All devices must be verified and compliant.</li><li><strong>Network Segmentation:</strong> Isolated networks prevent lateral movement.</li><li><strong>Continuous Monitoring:</strong> Real‑time threat detection and response.</li><li><strong>Least Privilege:</strong> Users only get minimum required access.</li></ul><p>This architecture ensures that even if one component is compromised, your data remains secure.</p></div></div>
+  <div id="monitoring-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>📊 Real‑Time Security Monitoring</h2><p>24/7 security operations centre:</p><ul><li><strong>Threat Detection:</strong> AI‑powered anomaly detection.</li><li><strong>Incident Response:</strong> Automated response to security events.</li><li><strong>Audit Trails:</strong> Complete logs of all system activity.</li><li><strong>Compliance Reporting:</strong> Automated compliance status reports.</li><li><strong>Performance Monitoring:</strong> System health and availability tracking.</li></ul><p>Our security team monitors your system around the clock to ensure maximum protection.</p></div></div>
+  <div id="datacenter-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>🌐 Global Data Centre Infrastructure</h2><p>Enterprise‑grade infrastructure:</p><ul><li><strong>Geographic Distribution:</strong> Data centres in US East, West and Central regions.</li><li><strong>Redundancy:</strong> Multiple backup systems ensure 99.9% uptime.</li><li><strong>Physical Security:</strong> Biometric access, 24/7 guards and surveillance.</li><li><strong>Environmental Controls:</strong> Temperature, humidity and power monitoring.</li><li><strong>Disaster Recovery:</strong> Automated failover and data replication.</li><li><strong>Compliance:</strong> SOC 2, HIPAA and PCI DSS certified facilities.</li></ul><p>Your data is stored in the most secure and reliable facilities available.</p></div></div>
+  <div id="privacy-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>Privacy Policy</h2><p>At Infinity AI, we take your privacy seriously. This policy outlines how we collect, use and protect your information.</p><p><strong>Information We Collect:</strong> Only the information necessary to provide our services, including call data and appointment information.</p><p><strong>How We Use Information:</strong> Your information is used solely to provide and improve our services. We never sell or share your data with third parties for marketing purposes.</p><p><strong>Data Security:</strong> All data is encrypted both in transit and at rest using industry‑leading security measures.</p><p><strong>Your Rights:</strong> You have the right to access, update or delete your personal information at any time. Contact us for any privacy‑related requests.</p></div></div>
+  <div id="terms-modal" class="modal"><div class="modal-content"><span class="close">&times;</span><h2>Terms of Service</h2><p>These terms govern your use of Infinity AI's services.</p><p><strong>Service Description:</strong> Infinity AI provides AI‑powered receptionist services including call answering, appointment scheduling and customer communication.</p><p><strong>User Responsibilities:</strong> You agree to provide accurate information and use our services in compliance with applicable laws and regulations.</p><p><strong>Service Availability:</strong> We strive for 99.9% uptime but cannot guarantee uninterrupted service due to factors beyond our control.</p><p><strong>Limitation of Liability:</strong> Our liability is limited to the amount paid for services in the preceding 12 months.</p></div></div>
+  <!-- Scripts -->
   <script>
-    // Prevent horizontal overflow
-    document.documentElement.style.overflowX = 'hidden';
-    document.body.style.overflowX = 'hidden';
-
-    // Get element by ID helper
-    const $ = id => document.getElementById(id);
-
-    // Scroll reveal animation
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Year
-    $('yr').textContent = new Date().getFullYear();
-
+    // Year in footer
+    document.getElementById('yr').textContent = new Date().getFullYear();
     // Mobile menu toggle
     function toggleMobileMenu() {
-      const menu = $('nav-menu');
+      var menu = document.getElementById('nav-menu');
       if (menu.style.display === 'flex') {
         menu.style.display = 'none';
       } else {
@@ -1144,107 +290,70 @@
         menu.style.right = '0';
         menu.style.background = '#fff';
         menu.style.padding = '20px';
-        menu.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+        menu.style.boxShadow = '0 4px 20px rgba(0,0,0,.1)';
       }
     }
-
-    // Enhanced calculator
-    function calculateLoss(){
-      const missed = parseInt($('missed').value) || 0;
-      const close = (parseInt($('close').value) || 0) / 100;
-      const ticket = parseInt($('ticket').value) || 0;
-      const days = parseInt($('days').value) || 0;
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    // Calculator
+    function calculateLoss() {
+      const missed = parseInt(document.getElementById('missed').value) || 0;
+      const close = (parseInt(document.getElementById('close').value) || 0) / 100;
+      const ticket = parseInt(document.getElementById('ticket').value) || 0;
+      const days = parseInt(document.getElementById('days').value) || 0;
       const monthly = missed * close * ticket * days;
-      
-      const calcOut = $('calcOut');
-      calcOut.style.transform = 'scale(1.05)';
-      calcOut.textContent = 'Monthly loss:  + monthly.toLocaleString();
-      
-      setTimeout(() => {
-        calcOut.style.transform = 'scale(1)';
-      }, 300);
+      const out = document.getElementById('calcOut');
+      out.textContent = 'Monthly loss: $' + monthly.toLocaleString();
     }
-    
-    // Add event listeners to calculator inputs
     ['missed','close','ticket','days'].forEach(id => {
-      const element = $(id);
-      if (element) {
-        element.addEventListener('input', calculateLoss);
-        element.addEventListener('focus', function() {
-          this.style.borderColor = 'var(--primary)';
-          this.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.2)';
-        });
-        element.addEventListener('blur', function() {
-          this.style.borderColor = 'rgba(255,255,255,0.2)';
-          this.style.boxShadow = 'none';
-        });
+      var el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', calculateLoss);
+        el.addEventListener('focus', function() { this.style.borderColor = 'var(--primary)'; this.style.boxShadow = '0 0 0 3px rgba(37,99,235,.2)'; });
+        el.addEventListener('blur', function() { this.style.borderColor = 'rgba(255,255,255,0.2)'; this.style.boxShadow = 'none'; });
       }
     });
-    
-    // Initial calculation
-    setTimeout(calculateLoss, 100);
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Navbar scroll effect
-    let lastScrollY = window.scrollY;
-    window.addEventListener('scroll', () => {
-      const navbar = $('navbar');
-      if (navbar) {
-        if (window.scrollY > lastScrollY && window.scrollY > 100) {
-          navbar.style.transform = 'translateY(-100%)';
-        } else {
-          navbar.style.transform = 'translateY(0)';
-        }
-      }
-      lastScrollY = window.scrollY;
-    });
-
-    // Auto-animate call messages when demo section comes into view
-    const demoSection = $('demo');
-    if (demoSection) {
-      const demoObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const messages = document.querySelectorAll('.call-message');
-            messages.forEach((message, index) => {
-              message.style.animationDelay = (index * 1.2) + 's';
-            });
-          }
-        });
-      }, { threshold: 0.3 });
-
-      demoObserver.observe(demoSection);
+    calculateLoss();
+    // Modals
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+      document.body.style.overflow = 'hidden';
     }
-
-    // Prevent zoom on input focus (iOS)
-    document.querySelectorAll('input').forEach(input => {
-      input.addEventListener('focus', function() {
-        this.style.fontSize = '16px';
+    function closeModal(modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target.classList.contains('close') || e.target === modal) {
+          closeModal(modal);
+        }
       });
     });
-
-    // Performance optimization
-    window.addEventListener('resize', function() {
-      clearTimeout(window.resizeTimeout);
-      window.resizeTimeout = setTimeout(function() {
-        calculateLoss();
-      }, 250);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => {
+          if (modal.style.display === 'block') closeModal(modal);
+        });
+      }
     });
-
-    console.log('Infinity AI - Production-Ready Website Loaded');
+    // Tabs
+    function showAudience(aud, event) {
+      document.querySelectorAll('.audience-content').forEach(el => { el.style.display = 'none'; });
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      const target = document.getElementById(aud);
+      if (target) {
+        target.style.display = 'block';
+      }
+      if (event && event.target) event.target.classList.add('active');
+    }
   </script>
 </body>
 </html>
