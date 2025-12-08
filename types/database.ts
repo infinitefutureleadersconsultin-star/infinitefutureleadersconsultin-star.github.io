@@ -7,7 +7,7 @@
  * - Document IDs are auto-generated or use Firebase Auth UID
  */
 
-import { Timestamp } from 'firebase/firestore';
+import type { Timestamp } from 'firebase/firestore';
 
 export type WorkflowStatus =
   | 'intake_step_1'
