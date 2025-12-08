@@ -391,7 +391,7 @@ export default function IntakeStep2Page() {
 
           {/* Submit Button */}
           <div className="pt-4">
-            <Button type="submit" fullWidth size="lg" loading={saving} disabled={saving}>
+            <Button type="submit" fullWidth size="lg" isLoading={saving} disabled={saving}>
               {saving ? 'Saving...' : 'Continue to Pre-Call Checklist'}
             </Button>
           </div>

@@ -337,7 +337,7 @@ export default function AdminDashboardPage() {
               <div className="flex gap-4">
                 <Button
                   onClick={() => handleMarkDiscoveryComplete(selectedSubmission)}
-                  loading={processing}
+                  isLoading={processing}
                   disabled={processing}
                 >
                   Yes, Mark Complete
@@ -389,7 +389,7 @@ export default function AdminDashboardPage() {
               <div className="flex gap-4">
                 <Button
                   onClick={handlePostVideo}
-                  loading={processing}
+                  isLoading={processing}
                   disabled={processing || !videoUrl}
                 >
                   Post Video
