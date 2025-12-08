@@ -1,12 +1,24 @@
 import Stripe from 'stripe';
 
 /**
- * Server-side Stripe client
+ * Server-side Stripe client with lazy initialization
+ * Created only when needed to avoid build-time errors
  */
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-11-17.clover',
-  typescript: true,
-});
+let stripeClient: Stripe | null = null;
+
+function getStripeClient(): Stripe {
+  if (!stripeClient) {
+    const secretKey = process.env.STRIPE_SECRET_KEY;
+    if (!secretKey) {
+      throw new Error('STRIPE_SECRET_KEY environment variable is not set');
+    }
+    stripeClient = new Stripe(secretKey, {
+      apiVersion: '2025-11-17.clover',
+      typescript: true,
+    });
+  }
+  return stripeClient;
+}
 
 /**
  * Create a checkout session for discovery call payment ($50)
@@ -15,6 +27,7 @@ export async function createDiscoveryCheckoutSession(
   submissionId: string,
   userId: string
 ): Promise<Stripe.Checkout.Session> {
+  const stripe = getStripeClient();
   const session = await stripe.checkout.sessions.create({
     mode: 'payment',
     line_items: [
@@ -51,6 +64,7 @@ export async function createDepositCheckoutSession(
   appName: string,
   depositAmountCents: number
 ): Promise<Stripe.Checkout.Session> {
+  const stripe = getStripeClient();
   const session = await stripe.checkout.sessions.create({
     mode: 'payment',
     line_items: [
@@ -87,6 +101,7 @@ export async function createFinalCheckoutSession(
   appName: string,
   finalAmountCents: number
 ): Promise<Stripe.Checkout.Session> {
+  const stripe = getStripeClient();
   const session = await stripe.checkout.sessions.create({
     mode: 'payment',
     line_items: [
@@ -121,9 +136,14 @@ export function constructWebhookEvent(
   payload: string | Buffer,
   signature: string
 ): Stripe.Event {
+  const stripe = getStripeClient();
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+  if (!webhookSecret) {
+    throw new Error('STRIPE_WEBHOOK_SECRET environment variable is not set');
+  }
   return stripe.webhooks.constructEvent(
     payload,
     signature,
-    process.env.STRIPE_WEBHOOK_SECRET!
+    webhookSecret
   );
 }
