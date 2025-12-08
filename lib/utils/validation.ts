@@ -15,22 +15,22 @@ export const intakeStep1Schema = z.object({
   full_name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
   company_name: z.string().optional(),
-  role: z.enum(USER_ROLES as [string, ...string[]]),
-  how_found_us: z.enum(HOW_FOUND_US_OPTIONS as [string, ...string[]]),
+  role: z.enum(USER_ROLES as unknown as [string, ...string[]]),
+  how_found_us: z.enum(HOW_FOUND_US_OPTIONS as unknown as [string, ...string[]]),
 
   // About Your App
   app_name: z.string().min(2, 'App name is required'),
   app_store_link: z.string().url().optional().or(z.literal('')),
   play_store_link: z.string().url().optional().or(z.literal('')),
   website_url: z.string().url().optional().or(z.literal('')),
-  app_category: z.enum(APP_CATEGORIES as [string, ...string[]]),
+  app_category: z.enum(APP_CATEGORIES as unknown as [string, ...string[]]),
   one_liner: z
     .string()
     .min(10, 'Description must be at least 10 characters')
     .max(150, 'Description must be 150 characters or less'),
   problem_solved: z.string().min(20, 'Please describe the problem your app solves'),
   target_audience: z.string().min(10, 'Please describe your target audience'),
-  current_downloads: z.enum(DOWNLOAD_RANGES as [string, ...string[]]),
+  current_downloads: z.enum(DOWNLOAD_RANGES as unknown as [string, ...string[]]),
 });
 
 /**
@@ -42,7 +42,7 @@ export const intakeStep2Schema = z.object({
   usage_rights_details: z.string().optional(),
   rush_delivery: z.boolean(),
   script_approval: z.boolean(),
-  budget_range: z.enum(BUDGET_RANGES as [string, ...string[]]),
+  budget_range: z.enum(BUDGET_RANGES as unknown as [string, ...string[]]),
   additional_notes: z.string().optional(),
 }).refine(
   (data) => {
