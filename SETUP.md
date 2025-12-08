@@ -8,7 +8,7 @@ Before you begin, make sure you have:
 
 - **Node.js 18+** installed
 - **npm** or **yarn** package manager
-- A **Supabase** account (free tier works)
+- A **Firebase** account (free Spark plan works)
 - A **Stripe** account (use test mode for development)
 - A **Resend** account for emails (free tier: 100 emails/day)
 - **Calendly** account (free plan works)
@@ -23,13 +23,17 @@ Before you begin, make sure you have:
 npm install
 ```
 
-### 2. Set Up Supabase
+### 2. Set Up Firebase
 
-1. Create a new project at [supabase.com](https://supabase.com)
-2. Go to **SQL Editor** in your Supabase dashboard
-3. Copy the entire contents of `supabase-schema.sql`
-4. Paste and run it in the SQL editor
-5. Verify all tables were created (profiles, app_submissions, notifications)
+**See `FIREBASE-SETUP.md` for detailed Firebase setup instructions.**
+
+Quick summary:
+1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+2. Enable Email/Password authentication
+3. Create a Firestore database
+4. Deploy the security rules from `firestore.rules`
+5. Get your web app configuration
+6. Download service account key for Admin SDK
 
 ### 3. Configure Environment Variables
 
@@ -40,11 +44,16 @@ npm install
 
 2. Fill in your credentials in `.env.local`:
 
-**Supabase:**
-- Go to Project Settings → API
-- Copy `Project URL` → `NEXT_PUBLIC_SUPABASE_URL`
-- Copy `anon public` key → `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- Copy `service_role` key → `SUPABASE_SERVICE_ROLE_KEY` (⚠️ Keep secret!)
+**Firebase:**
+- Get configuration from Firebase Console → Project Settings → General
+- Copy API Key → `NEXT_PUBLIC_FIREBASE_API_KEY`
+- Copy Auth Domain → `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
+- Copy Project ID → `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+- Copy Storage Bucket → `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+- Copy Messaging Sender ID → `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
+- Copy App ID → `NEXT_PUBLIC_FIREBASE_APP_ID`
+- Get Service Account from Project Settings → Service Accounts → Generate new private key
+- Minify JSON to one line → `FIREBASE_SERVICE_ACCOUNT_KEY`
 
 **Stripe:**
 - Go to [dashboard.stripe.com](https://dashboard.stripe.com)

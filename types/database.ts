@@ -1,9 +1,13 @@
 /**
- * Database types for Supabase tables
+ * Database types for Firestore collections
  *
- * NOTE: In production, generate these types automatically from your Supabase schema using:
- * npx supabase gen types typescript --project-id YOUR_PROJECT_ID > types/database.ts
+ * Firestore conventions:
+ * - Use camelCase for field names
+ * - Timestamps are Firebase Timestamp objects (converted to Date in code)
+ * - Document IDs are auto-generated or use Firebase Auth UID
  */
+
+import { Timestamp } from 'firebase/firestore';
 
 export type WorkflowStatus =
   | 'intake_step_1'
@@ -23,8 +27,8 @@ export type PrimaryGoal = 'brand_awareness' | 'deep_dive' | 'install_campaign';
 export type NotificationType = 'ready_to_post' | 'video_posted' | 'payment_complete';
 
 export interface Profile {
-  id: string;
-  created_at: string;
+  id: string; // Firebase Auth UID (document ID)
+  created_at: Timestamp | Date;
   email: string;
   full_name: string | null;
   company_name: string | null;
@@ -33,10 +37,10 @@ export interface Profile {
 }
 
 export interface AppSubmission {
-  id: string;
-  user_id: string;
-  created_at: string;
-  updated_at: string;
+  id: string; // Auto-generated document ID
+  user_id: string; // References Profile document ID (Firebase Auth UID)
+  created_at: Timestamp | Date;
+  updated_at: Timestamp | Date;
 
   // About You (Intake Step 1)
   full_name: string;
@@ -73,12 +77,12 @@ export interface AppSubmission {
   workflow_status: WorkflowStatus;
 
   // Timestamps
-  discovery_call_paid_at: string | null;
-  discovery_call_scheduled_at: string | null;
-  deposit_paid_at: string | null;
-  ready_to_post_at: string | null;
-  video_posted_at: string | null;
-  final_paid_at: string | null;
+  discovery_call_paid_at: Timestamp | Date | null;
+  discovery_call_scheduled_at: Timestamp | Date | null;
+  deposit_paid_at: Timestamp | Date | null;
+  ready_to_post_at: Timestamp | Date | null;
+  video_posted_at: Timestamp | Date | null;
+  final_paid_at: Timestamp | Date | null;
 
   // Payment Tracking (amounts in cents)
   total_amount_cents: number | null;
@@ -100,9 +104,9 @@ export interface AppSubmission {
 }
 
 export interface Notification {
-  id: string;
-  created_at: string;
-  submission_id: string | null;
+  id: string; // Auto-generated document ID
+  created_at: Timestamp | Date;
+  submission_id: string | null; // References AppSubmission document ID
   notification_type: NotificationType;
   sent_to_email: string;
   email_subject: string | null;
