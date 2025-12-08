@@ -8,7 +8,7 @@ import { getFirebaseAuth, getFirebaseDb } from '@/lib/firebase/client';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { DISCOVERY_CALL_FEE } from '@/lib/constants';
-import { formatCurrency } from '@/lib/utils/formatting';
+import { formatCurrency } from '@/lib/utils/pricing';
 
 export default function DiscoveryPaymentPage() {
   const router = useRouter();

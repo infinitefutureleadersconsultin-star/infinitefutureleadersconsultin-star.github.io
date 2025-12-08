@@ -19,8 +19,8 @@ import {
   calculateDeposit,
   calculateFinal,
   toCents,
+  formatCurrency,
 } from '@/lib/utils/pricing';
-import { formatCurrency } from '@/lib/utils/formatting';
 import type { AppSubmission, PrimaryGoal } from '@/types/database';
 
 export default function IntakeStep2Page() {

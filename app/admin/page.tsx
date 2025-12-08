@@ -9,8 +9,8 @@ import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Input } from '@/components/ui/Input';
 import { STATUS_LABELS } from '@/lib/constants';
-import { formatCurrency, formatDate } from '@/lib/utils/formatting';
-import { toDollars } from '@/lib/utils/pricing';
+import { formatDate } from '@/lib/utils/formatting';
+import { formatCurrency, toDollars } from '@/lib/utils/pricing';
 import type { AppSubmission } from '@/types/database';
 
 export default function AdminDashboardPage() {

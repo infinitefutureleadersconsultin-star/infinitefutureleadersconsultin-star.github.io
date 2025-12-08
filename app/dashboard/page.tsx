@@ -17,8 +17,7 @@ import { getFirebaseAuth, getFirebaseDb } from '@/lib/firebase/client';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { STATUS_LABELS, SERVICE_GOALS } from '@/lib/constants';
-import { formatCurrency } from '@/lib/utils/formatting';
-import { toDollars } from '@/lib/utils/pricing';
+import { formatCurrency, toDollars } from '@/lib/utils/pricing';
 import type { AppSubmission } from '@/types/database';
 
 export default function DashboardPage() {
