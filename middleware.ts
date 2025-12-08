@@ -1,6 +1,9 @@
 import { type NextRequest } from 'next/server';
 import { updateSession } from './lib/firebase/middleware';
 
+// Explicitly specify Edge runtime for Next.js 16 compatibility
+export const runtime = 'edge';
+
 export async function middleware(request: NextRequest) {
   return await updateSession(request);
 }
