@@ -140,7 +140,7 @@ export default function SignupPage() {
               required
             />
 
-            <Button type="submit" fullWidth isLoading={loading}>
+            <Button type="submit" className="w-full" isLoading={loading}>
               Create Account
             </Button>
           </form>

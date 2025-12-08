@@ -91,7 +91,7 @@ export default function DepositSuccessPage() {
 
             <div className="pt-4">
               <Link href="/dashboard">
-                <Button fullWidth size="lg">
+                <Button className="w-full" size="lg">
                   Go to Dashboard
                 </Button>
               </Link>

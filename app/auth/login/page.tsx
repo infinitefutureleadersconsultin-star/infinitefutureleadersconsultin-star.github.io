@@ -92,7 +92,7 @@ export default function LoginPage() {
               required
             />
 
-            <Button type="submit" fullWidth isLoading={loading}>
+            <Button type="submit" className="w-full" isLoading={loading}>
               Log In
             </Button>
           </form>

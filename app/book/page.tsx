@@ -186,9 +186,9 @@ export default function BookCallPage() {
 
             <Button
               onClick={handleConfirmBooking}
-              fullWidth
+              className="w-full"
               size="lg"
-              loading={confirming}
+              isLoading={confirming}
               disabled={confirming}
             >
               {confirming ? 'Confirming...' : "I've Booked My Call - Continue"}

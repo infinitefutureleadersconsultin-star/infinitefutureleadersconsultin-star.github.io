@@ -144,7 +144,7 @@ export default function DiscoverySuccessPage() {
             {/* CTA Button */}
             <div className="pt-4">
               <Link href="/book">
-                <Button fullWidth size="lg">
+                <Button className="w-full" size="lg">
                   Continue to Book Discovery Call
                 </Button>
               </Link>

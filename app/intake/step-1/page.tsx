@@ -451,7 +451,7 @@ export default function IntakeStep1Page() {
 
             {/* Submit Button */}
             <div className="pt-4">
-              <Button type="submit" fullWidth size="lg">
+              <Button type="submit" className="w-full" size="lg">
                 Continue to Discovery Call Payment
               </Button>
               <p className="text-sm text-gray-500 text-center mt-3">

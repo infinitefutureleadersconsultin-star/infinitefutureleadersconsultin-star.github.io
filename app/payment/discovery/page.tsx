@@ -209,9 +209,9 @@ export default function DiscoveryPaymentPage() {
             <div className="pt-4">
               <Button
                 onClick={handlePayment}
-                fullWidth
+                className="w-full"
                 size="lg"
-                loading={processing}
+                isLoading={processing}
                 disabled={processing}
               >
                 {processing ? 'Redirecting to payment...' : 'Pay Discovery Fee & Continue'}

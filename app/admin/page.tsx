@@ -489,7 +489,7 @@ export default function AdminDashboardPage() {
               </div>
 
               <div className="mt-6">
-                <Button variant="outline" onClick={() => setSelectedSubmission(null)} fullWidth>
+                <Button variant="outline" onClick={() => setSelectedSubmission(null)} className="w-full">
                   Close
                 </Button>
               </div>

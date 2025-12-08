@@ -290,9 +290,9 @@ export default function DashboardPage() {
                   </p>
                   <Button
                     onClick={handlePayDeposit}
-                    fullWidth
+                    className="w-full"
                     size="lg"
-                    loading={processing}
+                    isLoading={processing}
                     disabled={processing}
                   >
                     Pay {formatCurrency(toDollars(submission.deposit_amount_cents || 0), true)}{' '}
@@ -361,9 +361,9 @@ export default function DashboardPage() {
                   </div>
                   <Button
                     onClick={handleReadyToPost}
-                    fullWidth
+                    className="w-full"
                     size="lg"
-                    loading={processing}
+                    isLoading={processing}
                     disabled={processing}
                   >
                     I'm Ready - Please Post! 🚀
@@ -393,9 +393,9 @@ export default function DashboardPage() {
                   </div>
                   <Button
                     onClick={handlePayFinal}
-                    fullWidth
+                    className="w-full"
                     size="lg"
-                    loading={processing}
+                    isLoading={processing}
                     disabled={processing}
                   >
                     Pay Final {formatCurrency(toDollars(submission.final_amount_cents || 0), true)}
@@ -411,9 +411,9 @@ export default function DashboardPage() {
                   </p>
                   <Button
                     onClick={handlePayFinal}
-                    fullWidth
+                    className="w-full"
                     size="lg"
-                    loading={processing}
+                    isLoading={processing}
                     disabled={processing}
                   >
                     Pay Final {formatCurrency(toDollars(submission.final_amount_cents || 0), true)}
@@ -451,7 +451,7 @@ export default function DashboardPage() {
                     Review the pre-call checklist to prepare for our discovery call.
                   </p>
                   <Link href="/checklist">
-                    <Button fullWidth size="lg">
+                    <Button className="w-full" size="lg">
                       View Pre-Call Checklist
                     </Button>
                   </Link>
