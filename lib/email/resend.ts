@@ -1,10 +1,17 @@
 import { Resend } from 'resend';
 
 /**
- * Resend client for sending emails
- * Uses placeholder during build time when env var is not available
+ * Lazy-initialized Resend client
+ * Created only when needed to avoid build-time errors
  */
-export const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder_for_build');
+let resendClient: Resend | null = null;
+
+function getResendClient(): Resend {
+  if (!resendClient) {
+    resendClient = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resendClient;
+}
 
 /**
  * Send an email with automatic dev mode handling
@@ -27,6 +34,7 @@ export async function sendEmail({
   const devNote = isDev ? `[DEV - Would send to: ${to}] ` : '';
 
   try {
+    const resend = getResendClient();
     const { data, error } = await resend.emails.send({
       from: 'Infinite Future Leaders <noreply@infinitefutureleaders.com>',
       to: recipient,
