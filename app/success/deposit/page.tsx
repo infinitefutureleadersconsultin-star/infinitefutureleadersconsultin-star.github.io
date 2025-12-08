@@ -6,6 +6,9 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 
+// Force dynamic rendering since this page uses search params from Stripe redirect
+export const dynamic = 'force-dynamic';
+
 export default function DepositSuccessPage() {
   const searchParams = useSearchParams();
   const sessionId = searchParams.get('session_id');
