@@ -78,6 +78,3 @@ export async function verifyIdToken(token: string) {
 export async function isAdmin(email: string): Promise<boolean> {
   return email === process.env.ADMIN_EMAIL;
 }
-
-// Export initialized instances
-export { adminAuth, adminDb };
