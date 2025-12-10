@@ -1,6 +1,6 @@
 export function Pricing() {
   const currentFollowers = process.env.CURRENT_FOLLOWERS || '17,000';
-  const baseRate = '$1,000'; // Updated dynamically based on follower count
+  const baseRate = '$500'; // Updated dynamically based on follower count
 
   const features = [
     'Honest, developer-focused review',
@@ -57,7 +57,7 @@ export function Pricing() {
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 bg-primary-600 rounded-full"></span>
-                      $50 discovery call (refundable if we're not a fit)
+                      $50 discovery call (non-refundable)
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 bg-primary-600 rounded-full"></span>
@@ -147,7 +147,7 @@ export function Pricing() {
               Submit Your App
             </a>
             <p className="text-sm text-gray-600 mt-4">
-              $50 discovery call • Full refund if we're not a fit
+              $50 discovery call • Non-refundable
             </p>
           </div>
         </div>

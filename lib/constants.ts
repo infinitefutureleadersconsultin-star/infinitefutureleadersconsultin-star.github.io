@@ -1,6 +1,6 @@
 // Follower count tiers and base rates (in dollars)
 export const FOLLOWER_TIERS = [
-  { min: 0, max: 50000, rate: 1000 },
+  { min: 0, max: 50000, rate: 500 },
   { min: 50000, max: 100000, rate: 2000 },
   { min: 100000, max: 500000, rate: 5000 },
   { min: 500000, max: 1000000, rate: 10000 },
