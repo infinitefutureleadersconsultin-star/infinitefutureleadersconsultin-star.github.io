@@ -40,7 +40,7 @@ export async function sendEmail({
   try {
     const resend = getResendClient();
     const { data, error } = await resend.emails.send({
-      from: 'Infinite Future Leaders <noreply@infinitefutureleaders.com>',
+      from: 'Infinite Future Leaders <onboarding@resend.dev>',
       to: recipient,
       subject: `${devNote}${subject}`,
       html,
