@@ -41,8 +41,8 @@ export default function ChecklistPage() {
       const data = { id: submissionDoc.id, ...submissionDoc.data() } as AppSubmission;
       setSubmission(data);
 
-      // Check if user should be on this step
-      if (data.workflow_status === 'intake_step_2' || !data.primary_goal) {
+      // Check if user hasn't completed intake step 2 yet
+      if (!data.primary_goal) {
         router.push('/intake/step-2');
         return;
       }
