@@ -83,6 +83,42 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
           workflow_status: 'discovery_scheduled',
         });
         console.log(`Discovery payment processed for submission ${submissionId}`);
+
+        // Notify admin about discovery payment
+        await sendEmail({
+          to: adminEmail,
+          subject: `🎯 Discovery Call Paid: ${submission.app_name}`,
+          html: `
+            <h2>Discovery Call Payment Received</h2>
+            <p><strong>${submission.full_name}</strong> has paid the $50 discovery call fee for <strong>${submission.app_name}</strong>.</p>
+            <p>Next steps:</p>
+            <ul>
+              <li>Client will book a time on your Calendly</li>
+              <li>Client will select their service package</li>
+              <li>Review pre-call checklist</li>
+            </ul>
+            <p><a href="${process.env.NEXT_PUBLIC_APP_URL}/admin">View in Admin Dashboard</a></p>
+          `,
+        });
+
+        // Send confirmation to client
+        await sendEmail({
+          to: submission.email,
+          subject: 'Discovery Call Payment Confirmed ✅',
+          html: `
+            <h2>Payment Received!</h2>
+            <p>Hey ${submission.full_name?.split(' ')[0]},</p>
+            <p>Your $50 discovery call fee has been received. Here's what to do next:</p>
+            <ol>
+              <li><strong>Book your call</strong> - Pick a time on my Calendly</li>
+              <li><strong>Select your package</strong> - Choose your service level and add-ons</li>
+              <li><strong>Review the checklist</strong> - Get prepared for our call</li>
+            </ol>
+            <p><a href="${process.env.NEXT_PUBLIC_APP_URL}/book">Continue to booking →</a></p>
+            <p>Looking forward to chatting about ${submission.app_name}!</p>
+            <p><strong>Issiah Mclean</strong><br>@zaydevelops</p>
+          `,
+        });
         break;
 
       case 'deposit':
