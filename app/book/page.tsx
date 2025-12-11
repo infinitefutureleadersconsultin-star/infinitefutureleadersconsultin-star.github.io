@@ -103,7 +103,7 @@ export default function BookCallPage() {
     );
   }
 
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || '';
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/infinitefutureleadersconsultin/30min';
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white py-12 px-4 sm:px-6 lg:px-8">
