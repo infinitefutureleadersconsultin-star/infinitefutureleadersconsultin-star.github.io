@@ -444,6 +444,39 @@ export default function DashboardPage() {
                 </div>
               )}
 
+              {/* Discovery Call Scheduled - Book on Calendly */}
+              {status === 'discovery_scheduled' && (
+                <div className="space-y-4">
+                  <p className="text-gray-700">
+                    Great! Your discovery call payment has been received. Now let's schedule a time to chat.
+                  </p>
+                  <Link href="/book">
+                    <Button className="w-full" size="lg">
+                      📅 Book Your Discovery Call
+                    </Button>
+                  </Link>
+                  <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                    <p className="text-sm text-blue-700">
+                      After booking your call, you'll select your service package and review the pre-call checklist.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {/* Intake Step 2 - Select Package */}
+              {status === 'intake_step_2' && (
+                <div className="space-y-4">
+                  <p className="text-gray-700">
+                    Time to select your service package and add-ons.
+                  </p>
+                  <Link href="/intake/step-2">
+                    <Button className="w-full" size="lg">
+                      Select Your Package
+                    </Button>
+                  </Link>
+                </div>
+              )}
+
               {/* Other Statuses - Links to next steps */}
               {status === 'checklist' && (
                 <div className="space-y-4">
@@ -463,12 +496,30 @@ export default function DashboardPage() {
             <Card>
               <h3 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h3>
               <div className="space-y-2">
-                <Link
-                  href="/checklist"
-                  className="block text-primary-600 hover:text-primary-700 font-medium"
-                >
-                  → Pre-Call Checklist
-                </Link>
+                {status === 'discovery_scheduled' && (
+                  <Link
+                    href="/book"
+                    className="block text-primary-600 hover:text-primary-700 font-medium"
+                  >
+                    → Book Discovery Call
+                  </Link>
+                )}
+                {status === 'intake_step_2' && (
+                  <Link
+                    href="/intake/step-2"
+                    className="block text-primary-600 hover:text-primary-700 font-medium"
+                  >
+                    → Select Your Package
+                  </Link>
+                )}
+                {(status === 'checklist' || status === 'discovery_scheduled' || status === 'intake_step_2') && (
+                  <Link
+                    href="/checklist"
+                    className="block text-primary-600 hover:text-primary-700 font-medium"
+                  >
+                    → Pre-Call Checklist
+                  </Link>
+                )}
                 <a
                   href="mailto:infinitefutureleadersconsultin@gmail.com"
                   className="block text-primary-600 hover:text-primary-700 font-medium"
