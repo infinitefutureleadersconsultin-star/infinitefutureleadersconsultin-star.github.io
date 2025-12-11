@@ -114,7 +114,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
               <li><strong>Select your package</strong> - Choose your service level and add-ons</li>
               <li><strong>Review the checklist</strong> - Get prepared for our call</li>
             </ol>
-            <p><a href="${process.env.NEXT_PUBLIC_APP_URL}/book">Continue to booking →</a></p>
+            <p><a href="${process.env.NEXT_PUBLIC_APP_URL}/dashboard">Go to your dashboard →</a></p>
             <p>Looking forward to chatting about ${submission.app_name}!</p>
             <p><strong>Issiah Mclean</strong><br>@zaydevelops</p>
           `,

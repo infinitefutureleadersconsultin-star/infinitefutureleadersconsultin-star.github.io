@@ -44,6 +44,9 @@ export async function sendEmail({
       to: recipient,
       subject: `${devNote}${subject}`,
       html,
+      headers: {
+        'X-Entity-Ref-ID': '123456789', // Disable click tracking
+      },
     });
 
     if (error) {
