@@ -52,6 +52,13 @@ export default function DashboardPage() {
         return;
       }
 
+      // If admin user, redirect to admin dashboard
+      const adminEmail = process.env.NEXT_PUBLIC_ADMIN_EMAIL || 'infinitefutureleadersconsultin@gmail.com';
+      if (user.email === adminEmail) {
+        router.push('/admin');
+        return;
+      }
+
       setUserId(user.uid);
       const data = await loadSubmission(user.uid);
       setSubmission(data);
