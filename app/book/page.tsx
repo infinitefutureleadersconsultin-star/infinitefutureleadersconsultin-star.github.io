@@ -52,9 +52,10 @@ export default function BookCallPage() {
       const data = submissionDoc.data() as AppSubmission;
       setSubmissionId(submissionDoc.id);
 
-      // Check if discovery call is already scheduled
-      if (data.workflow_status === 'discovery_scheduled' || data.discovery_call_scheduled_at) {
-        // Already scheduled, redirect to next step
+      // Check if discovery call has already been confirmed (user clicked "I've Booked")
+      // Don't redirect just because status is discovery_scheduled - they need to actually book first!
+      if (data.discovery_call_scheduled_at) {
+        // Already confirmed booking, redirect to next step
         router.push('/intake/step-2');
         return;
       }
@@ -76,8 +77,9 @@ export default function BookCallPage() {
       const submissionRef = doc(db, 'appSubmissions', submissionId);
 
       // Update workflow status and timestamp
+      // Move to intake_step_2 since they've now booked the call
       await updateDoc(submissionRef, {
-        workflow_status: 'discovery_scheduled',
+        workflow_status: 'intake_step_2',
         discovery_call_scheduled_at: serverTimestamp(),
       });
 
