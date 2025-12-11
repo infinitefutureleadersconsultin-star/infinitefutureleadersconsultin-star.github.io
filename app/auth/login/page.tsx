@@ -36,8 +36,13 @@ export default function LoginPage() {
       const idToken = await user.getIdToken();
       document.cookie = `__session=${idToken}; path=/; max-age=3600; secure; samesite=strict`;
 
-      // Redirect to dashboard
-      router.push('/dashboard');
+      // Check if user is admin and redirect accordingly
+      const adminEmail = process.env.NEXT_PUBLIC_ADMIN_EMAIL || 'infinitefutureleadersconsultin@gmail.com';
+      if (user.email === adminEmail) {
+        router.push('/admin');
+      } else {
+        router.push('/dashboard');
+      }
     } catch (err: any) {
       console.error('Login error:', err);
 
@@ -62,7 +67,7 @@ export default function LoginPage() {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-4xl font-black text-gray-900 mb-2">Welcome Back</h1>
-          <p className="text-gray-600">Log in to continue your app submission.</p>
+          <p className="text-gray-600">Log in to access your dashboard.</p>
         </div>
 
         {/* Login Form */}
