@@ -4,6 +4,22 @@ import { Button } from '../ui/Button';
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+      {/* Header/Navbar */}
+      <header className="absolute top-0 left-0 right-0 z-20 py-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            <div className="text-2xl font-black">
+              Infinite Future Leaders
+            </div>
+            <Link href="/auth/login">
+              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                Log In
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </header>
+
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-600 rounded-full filter blur-3xl animate-pulse" />
