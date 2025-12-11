@@ -10,7 +10,7 @@ import { Card } from '@/components/ui/Card';
 import { Input } from '@/components/ui/Input';
 import { STATUS_LABELS } from '@/lib/constants';
 import { formatDate } from '@/lib/utils/formatting';
-import { formatCurrency, toDollars } from '@/lib/utils/pricing';
+import { formatCurrency } from '@/lib/utils/pricing';
 import type { AppSubmission } from '@/types/database';
 
 export default function AdminDashboardPage() {
@@ -248,7 +248,7 @@ export default function AdminDashboardPage() {
                     </td>
                     <td className="py-3 px-4 text-sm text-gray-900">
                       {submission.total_amount_cents
-                        ? formatCurrency(toDollars(submission.total_amount_cents), true)
+                        ? formatCurrency(submission.total_amount_cents, true)
                         : '-'}
                     </td>
                     <td className="py-3 px-4">

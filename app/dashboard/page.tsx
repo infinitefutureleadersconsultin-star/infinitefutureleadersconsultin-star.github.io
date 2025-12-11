@@ -17,7 +17,7 @@ import { getFirebaseAuth, getFirebaseDb } from '@/lib/firebase/client';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { STATUS_LABELS, SERVICE_GOALS } from '@/lib/constants';
-import { formatCurrency, toDollars } from '@/lib/utils/pricing';
+import { formatCurrency } from '@/lib/utils/pricing';
 import type { AppSubmission } from '@/types/database';
 
 export default function DashboardPage() {
@@ -302,7 +302,7 @@ export default function DashboardPage() {
                     isLoading={processing}
                     disabled={processing}
                   >
-                    Pay {formatCurrency(toDollars(submission.deposit_amount_cents || 0), true)}{' '}
+                    Pay {formatCurrency(submission.deposit_amount_cents || 0, true)}{' '}
                     Deposit
                   </Button>
                 </div>
@@ -405,7 +405,7 @@ export default function DashboardPage() {
                     isLoading={processing}
                     disabled={processing}
                   >
-                    Pay Final {formatCurrency(toDollars(submission.final_amount_cents || 0), true)}
+                    Pay Final {formatCurrency(submission.final_amount_cents || 0, true)}
                   </Button>
                 </div>
               )}
@@ -423,7 +423,7 @@ export default function DashboardPage() {
                     isLoading={processing}
                     disabled={processing}
                   >
-                    Pay Final {formatCurrency(toDollars(submission.final_amount_cents || 0), true)}
+                    Pay Final {formatCurrency(submission.final_amount_cents || 0, true)}
                   </Button>
                 </div>
               )}
@@ -593,7 +593,7 @@ export default function DashboardPage() {
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-gray-600">Total Project Cost</span>
                     <span className="font-bold text-gray-900">
-                      {formatCurrency(toDollars(submission.total_amount_cents), true)}
+                      {formatCurrency(submission.total_amount_cents, true)}
                     </span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
@@ -603,7 +603,7 @@ export default function DashboardPage() {
                         submission.deposit_paid_at ? 'text-green-600 font-bold' : 'text-gray-900'
                       }
                     >
-                      {formatCurrency(toDollars(submission.deposit_amount_cents || 0), true)}
+                      {formatCurrency(submission.deposit_amount_cents || 0, true)}
                       {submission.deposit_paid_at && ' ✓'}
                     </span>
                   </div>
@@ -614,7 +614,7 @@ export default function DashboardPage() {
                         submission.final_paid_at ? 'text-green-600 font-bold' : 'text-gray-900'
                       }
                     >
-                      {formatCurrency(toDollars(submission.final_amount_cents || 0), true)}
+                      {formatCurrency(submission.final_amount_cents || 0, true)}
                       {submission.final_paid_at && ' ✓'}
                     </span>
                   </div>
