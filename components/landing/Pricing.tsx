@@ -3,7 +3,7 @@ export function Pricing() {
   const baseRate = '$500'; // Updated dynamically based on follower count
 
   const features = [
-    'Honest, developer-focused review',
+    'Honest, authentic review of your brand or product',
     'Posted to 17K+ engaged followers',
     'Full creative control & script approval',
     'Up to 3 videos (Good Faith Policy)',
@@ -144,7 +144,7 @@ export function Pricing() {
               href="/auth/signup"
               className="inline-block px-8 py-4 bg-primary-600 text-white font-bold rounded-xl hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl text-lg"
             >
-              Submit Your App
+              Submit Your Brand
             </a>
             <p className="text-sm text-gray-600 mt-4">
               $50 discovery call • Non-refundable

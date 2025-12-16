@@ -4,8 +4,8 @@ export function WhatMakesDifferent() {
   const features = [
     {
       icon: '👨‍💻',
-      title: 'I\'m a Developer',
-      description: 'I understand what makes an app great. No surface-level reviews—I actually use and analyze your product like a founder would.',
+      title: 'I\'m a Developer & Founder',
+      description: 'I understand what makes products succeed. No surface-level reviews—I actually use and analyze what you're building like a founder would.',
     },
     {
       icon: '💬',
@@ -15,7 +15,7 @@ export function WhatMakesDifferent() {
     {
       icon: '🎯',
       title: 'Engaged Audience',
-      description: '17K+ followers who actively download and pay for apps I recommend. These aren\'t passive viewers—they take action.',
+      description: '17K+ followers who actively buy, download, and support brands I recommend. These aren\'t passive viewers—they take action.',
     },
   ];
 
@@ -27,7 +27,7 @@ export function WhatMakesDifferent() {
             What Makes This Different
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Not your typical influencer marketing. I'm a tech founder who actually builds products.
+            Not your typical influencer marketing. I'm a tech founder who knows what works, whether it's apps or consumer brands.
           </p>
         </div>
 
