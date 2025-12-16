@@ -27,17 +27,17 @@ export const DISCOVERY_CALL_FEE = 50;
 export const SERVICE_GOALS = {
   brand_awareness: {
     label: 'Brand Awareness',
-    description: 'Get your app name and concept in front of my audience',
+    description: 'Get your brand in front of my engaged audience',
     milestone: '5,000 views minimum',
   },
   deep_dive: {
     label: 'Deep Dive Review',
-    description: 'Thorough walkthrough showing features and honest opinion',
+    description: 'Thorough showcase of your product or service with my honest take',
     milestone: '3,000 views minimum + 50 comments',
   },
   install_campaign: {
-    label: 'Install Campaign',
-    description: 'Content designed to drive downloads with clear calls to action',
+    label: 'Conversion Campaign',
+    description: 'Content designed to drive sales, signups, downloads, or conversions',
     milestone: '2,000 views minimum + trackable link clicks',
   },
 } as const;
@@ -81,17 +81,25 @@ export const BUDGET_RANGES = [
   'Over $10,000 (Enterprise)',
 ] as const;
 
-// App categories
-export const APP_CATEGORIES = [
-  'Productivity',
-  'Health & Fitness',
-  'Finance',
-  'Social',
-  'Utility',
-  'Entertainment',
-  'Education',
+// Business/Industry categories
+export const BUSINESS_CATEGORIES = [
+  'Apps & Software',
+  'E-commerce & Retail',
+  'Fashion & Apparel',
+  'Beauty & Cosmetics',
+  'Health & Wellness',
+  'Food & Beverage',
+  'Events & Entertainment',
+  'Finance & Fintech',
+  'Education & Coaching',
+  'Home & Lifestyle',
+  'Professional Services',
+  'Creator/Influencer Brands',
   'Other',
 ] as const;
+
+// Legacy export for backwards compatibility
+export const APP_CATEGORIES = BUSINESS_CATEGORIES;
 
 // Current download ranges
 export const DOWNLOAD_RANGES = [
@@ -103,7 +111,19 @@ export const DOWNLOAD_RANGES = [
 ] as const;
 
 // User roles
-export const USER_ROLES = ['Founder', 'Developer', 'Marketing Lead', 'Other'] as const;
+export const USER_ROLES = [
+  'Founder/CEO',
+  'Business Owner',
+  'Marketing Director/Manager',
+  'Brand Manager',
+  'Product Manager',
+  'Entrepreneur',
+  'Developer',
+  'Content Creator',
+  'Social Media Manager',
+  'Event Coordinator',
+  'Other',
+] as const;
 
 // How found us options
 export const HOW_FOUND_US_OPTIONS = [

@@ -37,29 +37,29 @@ export function Bio() {
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  I'm a <span className="font-bold text-gray-900">full-stack developer</span> who
-                  reviews apps on TikTok. But not in the typical "influencer" way.
+                  I'm a <span className="font-bold text-gray-900">tech founder and creator</span> who
+                  reviews products and brands my audience actually wants to know about. Not in the typical "influencer" way.
                 </p>
 
                 <p>
-                  I actually <span className="font-bold text-gray-900">understand code</span>. I
-                  can appreciate good architecture, clever solutions, and the hard work that goes
-                  into building something from scratch.
+                  I actually <span className="font-bold text-gray-900">understand code</span> and product development. I
+                  can appreciate good design, clever solutions, and the hard work that goes
+                  into building something from scratch—whether it's an app or a physical product.
                 </p>
 
                 <p>
                   My audience of <span className="font-bold text-gray-900">17K+ followers</span>{' '}
-                  trusts me because I'm honest. If your app is great, I'll tell them. If it needs
+                  trusts me because I'm honest. If your product is great, I'll tell them. If it needs
                   work, I'll tell you (privately, of course).
                 </p>
 
                 <p>
-                  I started this because I saw too many great apps getting buried while mediocre
+                  I started this because I saw too many great products getting buried while mediocre
                   ones with big marketing budgets thrived. That didn't sit right with me.
                 </p>
 
                 <p className="text-lg font-bold text-gray-900 pt-4">
-                  Let's get your app in front of people who'll actually use it.
+                  Let's get your brand in front of people who'll actually engage with it.
                 </p>
               </div>
 

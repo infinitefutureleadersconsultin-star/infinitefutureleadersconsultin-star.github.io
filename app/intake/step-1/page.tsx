@@ -226,13 +226,8 @@ export default function IntakeStep1Page() {
     e.preventDefault();
 
     // Validation
-    if (!fullName || !email || !appName || !oneLiner || !problemSolved || !targetAudience) {
+    if (!fullName || !email || !appName || !oneLiner || !problemSolved || !targetAudience || !websiteUrl) {
       setError('Please fill in all required fields.');
-      return;
-    }
-
-    if (!appStoreLink && !playStoreLink && !websiteUrl) {
-      setError('Please provide at least one link (App Store, Play Store, or Website).');
       return;
     }
 
@@ -259,9 +254,9 @@ export default function IntakeStep1Page() {
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-black text-gray-900 mb-2">Tell Me About Your App</h1>
+          <h1 className="text-4xl font-black text-gray-900 mb-2">Tell Me About Your Brand</h1>
           <p className="text-gray-600">
-            This helps me understand your product and prepare for our discovery call.
+            This helps me understand your product or service and prepare for our discovery call.
           </p>
           {lastSaved && (
             <p className="text-sm text-green-600 mt-2">
@@ -339,34 +334,17 @@ export default function IntakeStep1Page() {
               </div>
             </div>
 
-            {/* About Your App */}
+            {/* About Your Brand/Product */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">About Your App</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">About Your Brand/Product</h2>
               <div className="space-y-4">
                 <Input
-                  label="App Name"
+                  label="Brand/Product Name"
                   type="text"
                   value={appName}
                   onChange={(e) => setAppName(e.target.value)}
-                  placeholder="TaskFlow"
+                  placeholder="Your brand or product name"
                   required
-                />
-
-                <Input
-                  label="App Store Link (iOS)"
-                  type="url"
-                  value={appStoreLink}
-                  onChange={(e) => setAppStoreLink(e.target.value)}
-                  placeholder="https://apps.apple.com/..."
-                  helperText="At least one link (App Store, Play Store, or Website) is required"
-                />
-
-                <Input
-                  label="Play Store Link (Android)"
-                  type="url"
-                  value={playStoreLink}
-                  onChange={(e) => setPlayStoreLink(e.target.value)}
-                  placeholder="https://play.google.com/..."
                 />
 
                 <Input
@@ -374,12 +352,29 @@ export default function IntakeStep1Page() {
                   type="url"
                   value={websiteUrl}
                   onChange={(e) => setWebsiteUrl(e.target.value)}
-                  placeholder="https://yourapp.com"
+                  placeholder="https://yourbrand.com"
+                  required
+                />
+
+                <Input
+                  label="App Store Link (Optional)"
+                  type="url"
+                  value={appStoreLink}
+                  onChange={(e) => setAppStoreLink(e.target.value)}
+                  placeholder="https://apps.apple.com/... (if applicable)"
+                />
+
+                <Input
+                  label="Play Store Link (Optional)"
+                  type="url"
+                  value={playStoreLink}
+                  onChange={(e) => setPlayStoreLink(e.target.value)}
+                  placeholder="https://play.google.com/... (if applicable)"
                 />
 
                 <div className="space-y-2">
                   <label className="block text-sm font-bold text-gray-900">
-                    App Category (Optional)
+                    Industry/Category (Optional)
                   </label>
                   <select
                     value={appCategory}

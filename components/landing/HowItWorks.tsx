@@ -2,8 +2,8 @@ export function HowItWorks() {
   const steps = [
     {
       number: '1',
-      title: 'Submit Your App',
-      description: 'Fill out a quick intake form telling me about your app and your goals.',
+      title: 'Submit Your Brand',
+      description: 'Fill out a quick intake form telling me about your product or service and your goals.',
     },
     {
       number: '2',
@@ -13,7 +13,7 @@ export function HowItWorks() {
     {
       number: '3',
       title: 'Review & Approve',
-      description: 'I create honest content that showcases what makes your app unique.',
+      description: 'I create honest content that showcases what makes your brand or product stand out.',
     },
     {
       number: '4',

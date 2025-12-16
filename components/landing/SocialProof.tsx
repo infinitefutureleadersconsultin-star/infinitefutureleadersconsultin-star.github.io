@@ -2,24 +2,24 @@ export function SocialProof() {
   const testimonials = [
     {
       quote:
-        "Issiah's review was genuine and helped us get real users who actually cared about our product. Worth every penny.",
+        "Issiah's review was genuine and helped us get real customers who actually cared about our product. Worth every penny.",
       author: 'Sarah Chen',
       role: 'Founder @ TaskFlow',
-      appCategory: 'Productivity',
+      appCategory: 'Apps & Software',
     },
     {
       quote:
-        "As a developer himself, Issiah understood our app immediately. His review highlighted features we didn't even think to mention.",
+        "His audience is perfect for our brand. We saw immediate traffic and conversions. Issiah knows how to showcase products authentically.",
       author: 'Marcus Rodriguez',
-      role: 'CTO @ DevSync',
-      appCategory: 'Developer Tools',
+      role: 'Brand Manager @ UrbanFit',
+      appCategory: 'Fashion & Apparel',
     },
     {
       quote:
-        "We got 2,000+ installs in the first week after his review. His audience is incredibly engaged and trusts his recommendations.",
+        "We got real engagement and sales in the first week after his review. His followers trust his recommendations and actually take action.",
       author: 'Emily Watson',
-      role: 'Product Lead @ HealthTrack',
-      appCategory: 'Health & Fitness',
+      role: 'Business Owner @ GlowUp Beauty',
+      appCategory: 'Beauty & Cosmetics',
     },
   ];
 
@@ -28,10 +28,10 @@ export function SocialProof() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-            What Founders Say
+            What Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real results from real founders who've worked with me.
+            Real results from real brands who've worked with me.
           </p>
         </div>
 

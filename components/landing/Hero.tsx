@@ -39,7 +39,7 @@ export function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            Get Your App Seen By{' '}
+            Get Your Brand Seen By{' '}
             <span className="bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent">
               People Who Actually Care
             </span>
@@ -49,15 +49,14 @@ export function Hero() {
           <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Honest reviews from a <strong>developer</strong> and{' '}
             <strong>tech founder</strong> who gives hot takes to an engaged
-            audience of productivity enthusiasts, side hustlers, and fellow
-            developers.
+            audience of productivity enthusiasts, side hustlers, entrepreneurs, and creators.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Link href="/auth/signup">
               <Button size="lg" className="w-full sm:w-auto min-w-[200px]">
-                Submit Your App →
+                Submit Your Brand →
               </Button>
             </Link>
             <a href="https://tiktok.com/@zaydevelops" target="_blank" rel="noopener noreferrer">
