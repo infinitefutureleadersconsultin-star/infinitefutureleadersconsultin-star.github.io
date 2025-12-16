@@ -5,7 +5,7 @@ export function WhatMakesDifferent() {
     {
       icon: '👨‍💻',
       title: 'I\'m a Developer & Founder',
-      description: 'I understand what makes products succeed. No surface-level reviews—I actually use and analyze what you're building like a founder would.',
+      description: 'I understand what makes products succeed. No surface-level reviews—I actually use and analyze what you\'re building like a founder would.',
     },
     {
       icon: '💬',
