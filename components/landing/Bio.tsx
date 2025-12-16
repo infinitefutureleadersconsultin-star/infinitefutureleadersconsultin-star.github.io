@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function Bio() {
   return (
     <section className="py-24 bg-white">
@@ -6,16 +8,15 @@ export function Bio() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center">
-                {/* Placeholder - Replace with actual image */}
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-primary-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl font-black text-white">IM</span>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    Photo placeholder - Add image URL
-                  </p>
-                </div>
+              <div className="aspect-square bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl overflow-hidden">
+                <Image
+                  src="/profile.jpg"
+                  alt="Issiah - Tech Founder and Creator"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
 
               {/* Stats Badge */}
