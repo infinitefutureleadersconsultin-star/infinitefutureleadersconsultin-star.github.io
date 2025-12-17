@@ -101,7 +101,10 @@ export function Hero() {
         {/* RIGHT SIDE - Infinity AI Solutions */}
         <div className="relative flex-1 flex items-center justify-center bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white overflow-hidden min-h-screen">
           {/* Background Grid Pattern */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+          <div className="absolute inset-0 opacity-10" style={{
+            backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }} />
 
           {/* Background Image Overlay */}
           <div className="absolute inset-0 opacity-30">
@@ -197,15 +200,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .bg-grid-pattern {
-          background-image:
-            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-          background-size: 50px 50px;
-        }
-      `}</style>
     </section>
   );
 }
