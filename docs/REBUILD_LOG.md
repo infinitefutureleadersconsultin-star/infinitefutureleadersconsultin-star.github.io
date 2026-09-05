@@ -29,3 +29,26 @@ Every file removed or replaced during the rebuild, with the reason and what took
 | `components/landing/Pricing.tsx` | DELETE | $500 base rate card, add-ons, payment structure for TikTok reviews | nothing |
 | `components/landing/SocialProof.tsx` | DELETE | Three hardcoded testimonials (TaskFlow, UrbanFit, GlowUp Beauty) | nothing |
 | `components/landing/WhatMakesDifferent.tsx` | DELETE | Three feature cards with emoji icons about TikTok brand reviews | nothing |
+| `lib/constants.ts` | DELETE | Follower tiers, TikTok pricing, add-on prices, workflow statuses, business categories | nothing |
+| `lib/email/resend.ts` | DELETE | Resend email client, from address "Infinite Future Leaders" | nothing |
+| `lib/email/templates.ts` | DELETE | Four HTML email templates referencing "Issiah Mclean", "@zaydevelops" | nothing |
+| `lib/firebase/admin.ts` | DELETE | Firebase Admin SDK initialization, verifyIdToken, isAdmin | nothing |
+| `lib/firebase/client.ts` | DELETE | Firebase client SDK initialization, getFirebaseAuth, getFirebaseDb | nothing |
+| `lib/firebase/middleware.ts` | DELETE | Route protection checking __session cookie for Firebase auth | nothing |
+| `lib/stripe/client.ts` | DELETE | Stripe.js client loader | nothing |
+| `lib/stripe/server.ts` | DELETE | Server Stripe client, checkout session creators for discovery/deposit/final | nothing |
+| `lib/utils/formatting.ts` | DELETE | Date formatting utilities depending on date-fns | nothing |
+| `lib/utils/pricing.ts` | DELETE | Pricing calculations (getBaseRate, calculateTotal, toCents) | nothing |
+| `lib/utils/validation.ts` | DELETE | Zod schemas for intake form validation | nothing |
+| `types/database.ts` | DELETE | TypeScript types for Profile, AppSubmission, Notification (old data model) | nothing |
+| `types/index.ts` | DELETE | Re-exports of old product types, ServiceSelection, PricingBreakdown | nothing |
+| `middleware.ts` | DELETE | Root middleware importing Firebase route protection (import target deleted) | nothing |
+| `firestore.rules` | DELETE | Firestore security rules for profiles, appSubmissions, notifications; hardcoded old admin email | nothing |
+| `SETUP.md` | DELETE | Old product setup guide referencing Supabase, Stripe, Calendly, old email | nothing |
+| `FIREBASE-SETUP.md` | DELETE | Firebase setup guide for old product's project and data model | nothing |
+| `public/file.svg` | DELETE | Next.js create-next-app template leftover | nothing |
+| `public/globe.svg` | DELETE | Next.js template leftover | nothing |
+| `public/next.svg` | DELETE | Next.js logo SVG — template leftover and framework badge | nothing |
+| `public/profile.jpg` | DELETE | Personal photo used in old Bio component | nothing |
+| `public/vercel.svg` | DELETE | Vercel logo SVG — template leftover and deploy badge | nothing |
+| `public/window.svg` | DELETE | Next.js template leftover | nothing |
