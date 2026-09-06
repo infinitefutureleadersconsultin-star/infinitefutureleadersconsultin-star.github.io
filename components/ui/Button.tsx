@@ -16,18 +16,19 @@ export function Button({
   disabled,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'font-semibold rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center';
+  const baseStyles =
+    'font-semibold rounded inline-flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 focus-visible:ring-offset-2';
 
   const variants = {
-    primary: 'bg-primary-600 text-white hover:bg-primary-700 shadow-md hover:shadow-lg',
-    secondary: 'bg-white text-primary-600 border-2 border-primary-600 hover:bg-primary-50',
-    outline: 'bg-transparent text-gray-700 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50',
+    primary: 'bg-accent text-white hover:bg-accent-hover',
+    secondary: 'bg-white text-accent border border-accent hover:bg-gray-50',
+    outline: 'bg-transparent text-gray-700 border border-gray-300 hover:border-gray-400 hover:bg-gray-50',
   };
 
   const sizes = {
-    sm: 'px-4 py-2 text-sm',
-    md: 'px-6 py-3 text-base',
-    lg: 'px-8 py-4 text-lg',
+    sm: 'px-3 py-1.5 text-sm',
+    md: 'px-4 py-2 text-base',
+    lg: 'px-6 py-3 text-lg',
   };
 
   return (
@@ -38,10 +39,10 @@ export function Button({
     >
       {isLoading && (
         <svg
-          className="animate-spin -ml-1 mr-3 h-5 w-5"
-          xmlns="http://www.w3.org/2000/svg"
+          className="animate-spin -ml-1 mr-2 h-4 w-4"
           fill="none"
           viewBox="0 0 24 24"
+          aria-hidden="true"
         >
           <circle
             className="opacity-25"

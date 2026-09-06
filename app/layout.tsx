@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Infinite Future Leaders Consulting | App Review & Promotion",
-  description: "Get your app seen by 17K+ engaged TikTok followers. Honest reviews from a developer who understands what matters.",
-  keywords: ["app review", "TikTok marketing", "app promotion", "startup marketing"],
+  // TODO(phase-b): add description, Open Graph, and other metadata
+  title: "The Esther and Mays Group LLC",
 };
 
 export default function RootLayout({
@@ -21,8 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
