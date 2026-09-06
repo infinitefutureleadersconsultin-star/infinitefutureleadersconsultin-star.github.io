@@ -42,7 +42,7 @@ export default function ApproachPage() {
             <p>
               Usage is controlled and visible on the company side. Because the
               company holds the credential, it controls what the tool does and
-              what it costs. That cost is the company's, not a district line item.
+              what it costs. That cost is the company&apos;s, not a district line item.
             </p>
           </li>
           <li>
