@@ -1,5 +1,5 @@
 {
-  "name": "infinitefutureleadersconsultin-star.github.io",
+  "name": "esther-and-mays",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@stripe/stripe-js": "^8.5.3",
-    "date-fns": "^4.1.0",
-    "firebase": "^12.6.0",
-    "firebase-admin": "^13.6.0",
     "next": "16.0.7",
     "react": "19.2.0",
-    "react-calendly": "^4.4.0",
     "react-dom": "19.2.0",
-    "resend": "^6.5.2",
-    "stripe": "^20.0.0",
     "zod": "^4.1.13"
   },
   "devDependencies": {
