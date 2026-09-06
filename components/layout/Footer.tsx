@@ -35,7 +35,7 @@ export function Footer() {
           </nav>
         </div>
 
-        <p className="mt-6 text-xs text-gray-400">
+        <p className="mt-6 text-sm text-gray-600">
           &copy; {new Date().getFullYear()} The Esther and Mays Group LLC
         </p>
       </div>
